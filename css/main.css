@@ -470,6 +470,10 @@ nav li:hover {
   }
   .hero {
     margin-top: unset;
+    margin-top: 6em;
+    position: absolute;
+    right: 0;
+    left: 0;
   }
   .hero .container {
     display: -webkit-box;

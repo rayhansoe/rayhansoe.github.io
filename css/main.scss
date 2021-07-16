@@ -471,6 +471,10 @@ nav {
 
 	.hero {
 		margin-top: unset;
+		margin-top: 6em;
+		position: absolute;
+		right: 0;
+		left: 0;
 		.container {
 			display: flex;
 			justify-content: space-between;
