@@ -22,7 +22,7 @@ body {
   background: var(--bgColor1);
   margin: 0;
   font-family: "inter", sans-serif;
-  background-image: url("/images/bg.svg");
+  background-image: url("/images/bg-min.png");
   position: relative;
   height: 100vh;
 }
