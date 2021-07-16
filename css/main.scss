@@ -26,6 +26,9 @@ body {
 	background-image: url("/images/bg-min.png");
 	position: relative;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .navbar {
@@ -197,7 +200,8 @@ nav {
 }
 
 .footer {
-	position: absolute;
+	// position: absolute;
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
