@@ -413,6 +413,7 @@ nav li:hover {
     height: auto;
     padding: 0;
     position: relative;
+    display: block;
     display: contents;
   }
   .navbar nav ul {
