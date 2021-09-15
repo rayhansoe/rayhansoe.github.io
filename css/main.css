@@ -22,8 +22,8 @@ body {
   background: var(--bgColor1);
   margin: 0;
   background-color: #343439;
-  font-family: "inter", sans-serif;
-  background-image: url("/images/bg-min.png");
+  font-family: 'inter', sans-serif;
+  background-image: url("../images/bg-min.png");
   position: relative;
   height: 100vh;
   display: -webkit-box;
@@ -118,19 +118,19 @@ section {
   letter-spacing: 1.5px;
   font-weight: 300;
   font-size: 1em;
-  font-family: "inter";
+  font-family: 'inter';
   margin: 0;
   display: none;
 }
 
 .hero .container .left-col .subhead span {
-  font-family: "Averia Libre";
+  font-family: 'Averia Libre';
   color: var(--primaryColor);
 }
 
 .hero .container .left-col h1 {
   font-size: 1.8em;
-  font-family: "Averia Libre";
+  font-family: 'Averia Libre';
   line-height: 1.3em;
   margin: 0;
   color: var(--text);
@@ -202,7 +202,7 @@ nav li a {
 }
 
 nav li a span {
-  font-family: "Averia Libre";
+  font-family: 'Averia Libre';
   color: #e16259;
   display: none;
 }
@@ -289,17 +289,17 @@ nav li:hover {
     letter-spacing: 1.5px;
     font-weight: 300;
     font-size: 1em;
-    font-family: "inter";
+    font-family: 'inter';
     margin: 0;
     display: none;
   }
   .hero .container .left-col .subhead span {
-    font-family: "Averia Libre";
+    font-family: 'Averia Libre';
     color: var(--primaryColor);
   }
   .hero .container .left-col h1 {
     font-size: 2.5em;
-    font-family: "Averia Libre";
+    font-family: 'Averia Libre';
     line-height: 1.3em;
     margin: 0;
     color: var(--text);
@@ -359,7 +359,7 @@ nav li:hover {
     font-weight: 400;
   }
   nav li a span {
-    font-family: "Averia Libre";
+    font-family: 'Averia Libre';
     color: #e16259;
   }
   nav li:hover {
@@ -413,7 +413,7 @@ nav li:hover {
     height: auto;
     padding: 0;
     position: relative;
-    display: block;
+    display: contents;
   }
   .navbar nav ul {
     display: -webkit-box;
@@ -502,7 +502,7 @@ nav li:hover {
   .hero .container .left-col h1 {
     font-size: 3em;
     letter-spacing: 2.5px;
-    font-family: "Averia Libre";
+    font-family: 'Averia Libre';
     color: var(--text);
     font-weight: 400;
     margin-bottom: unset;
