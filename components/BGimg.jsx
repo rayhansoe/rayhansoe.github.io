@@ -7,7 +7,7 @@ function BGImage() {
 	return (
 		<>
 			{/* DARK */}
-			<div className='fixed z-[-1] h-screen w-screen overflow-hidden display dark:'>
+			<div className='hidden fixed bg-dark-mode z-[-1] h-screen w-screen overflow-hidden dark:block'>
 				<Image
 					priority
 					alt='BG'
@@ -21,7 +21,7 @@ function BGImage() {
 			</div>
 
 			{/* Light */}
-			<div className='fixed z-[-1] h-screen w-screen overflow-hidden dark:z-[-999]'>
+			<div className='fixed z-[-1] bg-white h-screen w-screen overflow-hidden dark:hidden'>
 				<Image
 					priority
 					alt='BG'

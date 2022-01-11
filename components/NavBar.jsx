@@ -10,7 +10,13 @@ const NavBar = () => {
 	const { systemTheme, theme, setTheme } = useTheme()
 	const [mounted, setMounted] = useState(false)
 
-	const mobileNavToggle = () => setIsMobileNavDisplayed(curr => !curr)
+	const mobileNavToggle = e => {
+		e.stopPropagation()
+		setIsMobileNavDisplayed(curr => !curr)
+	}
+	const stopBubbling = e => {
+		e.stopPropagation()
+	}
 
 	const handleWindowResize = useCallback(() => {
 		window.innerWidth > 1024 && setIsMobileNavDisplayed(false)
@@ -44,16 +50,18 @@ const NavBar = () => {
 	}
 
 	return (
-		<section className='navbar py-6'>
+		<section className='navbar py-8'>
 			<Container>
 				<div className='nav flex justify-between items-center'>
-					<h2 className='font-bold'>DEVHOAM</h2>
+					<h2 className='font-bold text-3xl'>DEVHOAM</h2>
 					<div
 						onClick={mobileNavToggle}
 						className={`${
 							isMobileNavDisplayed ? 'absolute' : 'hidden'
-						} flex flex-col items-center justify-center w-full flex-1 text-center bg-gray-500 dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 top-0 left-0 min-h-screen cursor-pointer text-white text-xl lg:block lg:relative lg:w-auto lg:min-h-full lg:flex-grow-0 lg:dark:bg-opacity-0 lg:bg-opacity-0`}>
-						<ul className='relative flex flex-col items-center justify-center p-24 gap-8 bg-white text-black dark:text-white dark:bg-dark-mode rounded pointer-events-auto cursor-default z-20 lg:p-0 lg:flex-row lg:bg-opacity-0 lg:dark:bg-opacity-0'>
+						} flex flex-col items-center justify-center w-full flex-1 text-center bg-dark-mode dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-80 top-0 left-0 min-h-screen cursor-pointer text-white text-xl lg:block lg:relative lg:w-auto lg:min-h-full lg:flex-grow-0 lg:dark:bg-opacity-0 lg:bg-opacity-0 lg:text-lg`}>
+						<ul
+							className='relative flex flex-col items-center justify-center p-24 gap-8 bg-white text-black dark:text-white dark:bg-dark-mode rounded pointer-events-auto cursor-default z-20 lg:p-0 lg:flex-row lg:bg-opacity-0 lg:dark:bg-opacity-0 lg:gap-12'
+							onClick={stopBubbling}>
 							<li>
 								<a href='#'>Resume</a>
 							</li>
@@ -66,8 +74,8 @@ const NavBar = () => {
 						</ul>
 					</div>
 					<div className='menu-buttons flex gap-4'>
-						<MenuIcon className='w-7 h-7 lg:hidden' role='button' onClick={mobileNavToggle} />
 						{renderThemeChanger()}
+						<MenuIcon className='w-7 h-7 lg:hidden' role='button' onClick={mobileNavToggle} />
 					</div>
 				</div>
 			</Container>
