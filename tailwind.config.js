@@ -7,6 +7,9 @@ module.exports = {
 			zIndex: {
 				0: '0',
 			},
+			colors: {
+				'dark-mode': '#343439',
+			},
 		},
 	},
 	plugins: [],
