@@ -53,23 +53,31 @@ const NavBar = () => {
 		<section className='navbar py-8'>
 			<Container>
 				<div className='nav flex justify-between items-center'>
-					<h2 className='font-bold text-3xl'>DEVHOAM</h2>
+					<h2 className='font-averia font-bold text-3xl'>
+						<span className='text-primary-color'>DEV</span>HOAM
+					</h2>
 					<div
 						onClick={mobileNavToggle}
 						className={`${
 							isMobileNavDisplayed ? 'absolute' : 'hidden'
-						} flex flex-col items-center justify-center w-full flex-1 text-center bg-dark-mode dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-80 top-0 left-0 min-h-screen cursor-pointer text-white text-xl lg:block lg:relative lg:w-auto lg:min-h-full lg:flex-grow-0 lg:dark:bg-opacity-0 lg:bg-opacity-0 lg:text-lg`}>
+						} flex flex-col items-center justify-center w-full flex-1 text-center bg-dark-mode dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-80 top-0 left-0 min-h-screen cursor-pointer text-xl lg:block lg:relative lg:w-auto lg:min-h-full lg:flex-grow lg:dark:bg-opacity-0 lg:bg-opacity-0 lg:text-lg lg:justify-between lg:cursor-default`}>
 						<ul
-							className='relative flex flex-col items-center justify-center p-24 gap-8 bg-white text-black dark:text-white dark:bg-dark-mode rounded pointer-events-auto cursor-default z-20 lg:p-0 lg:flex-row lg:bg-opacity-0 lg:dark:bg-opacity-0 lg:gap-12'
+							className='relative flex flex-col items-center justify-center p-24 gap-8 bg-white text-text-dark dark:text-text-light dark:bg-dark-mode rounded pointer-events-auto cursor-default z-20 lg:p-0 lg:flex-row lg:bg-opacity-0 lg:dark:bg-opacity-0 lg:text-base lg:justify-between lg:max-w-md lg:flex-shrink lg:mx-auto'
 							onClick={stopBubbling}>
 							<li>
-								<a href='#'>Resume</a>
+								<a href='#'>
+									<span className='font-averia text-primary-color'>01.</span> Resume
+								</a>
 							</li>
 							<li>
-								<a href='#'>Contact</a>
+								<a href='#'>
+									<span className='font-averia text-primary-color'>02.</span> Contact
+								</a>
 							</li>
 							<li>
-								<a href='#'>Project</a>
+								<a href='#'>
+									<span className='font-averia text-primary-color'>03.</span> Project
+								</a>
 							</li>
 						</ul>
 					</div>
