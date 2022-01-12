@@ -7,9 +7,9 @@ const NavBar = dynamic(() => import('../components/NavBar'))
 
 export default function Home() {
 	return (
-		<>
+		<body className='text-text-dark dark:text-text-light'>
 			<BGimg />
 			<NavBar />
-		</>
+		</body>
 	)
 }
