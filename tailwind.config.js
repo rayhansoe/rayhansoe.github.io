@@ -9,6 +9,13 @@ module.exports = {
 			},
 			colors: {
 				'dark-mode': '#343439',
+				'text-dark': '#111111',
+				'text-light': '#FFFEFC',
+				'primary-color': '#E16259',
+			},
+			fontFamily: {
+				averia: ['Averia Libre'],
+				body: ['Inter'],
 			},
 		},
 	},
