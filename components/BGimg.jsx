@@ -17,12 +17,14 @@ function BGImage() {
 					layout='fill'
 					objectFit='cover'
 					quality={100}
+					draggable='false'
 				/>
 			</div>
 
 			{/* Light */}
-			<div className='fixed z-[-1] bg-white h-screen w-screen overflow-hidden dark:hidden'>
+			<div className='fixed z-[-1] bg-text-light h-screen w-screen overflow-hidden dark:hidden'>
 				<Image
+					draggable='false'
 					priority
 					alt='BG'
 					src='/BG-LIGHT-RAW (1).webp'
