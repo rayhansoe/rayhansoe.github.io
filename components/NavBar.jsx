@@ -51,7 +51,7 @@ const NavBar = () => {
 	}
 
 	return (
-		<section className='navbar py-8'>
+		<section className='navbar pt-8'>
 			<Container>
 				<div className='nav flex justify-between items-center'>
 					<h2 className='font-averia font-bold text-3xl'>
