@@ -1,0 +1,12 @@
+.icon2 {
+	display: none;
+}
+
+:hover.secButton {
+	.icon {
+		display: none;
+	}
+	.icon2 {
+		display: unset;
+	}
+}
