@@ -54,9 +54,13 @@ const NavBar = () => {
 		<section className='navbar pt-8'>
 			<Container>
 				<div className='nav flex justify-between items-center'>
-					<h2 className='font-averia font-bold text-3xl'>
-						<span className='text-primary-color'>DEV</span>HOAM
-					</h2>
+					<Link href='/'>
+						<a>
+							<h2 className='font-averia font-bold text-3xl'>
+								<span className='text-primary-color'>DEV</span>HOAM
+							</h2>
+						</a>
+					</Link>
 					<div
 						onClick={mobileNavToggle}
 						className={`${
@@ -75,7 +79,7 @@ const NavBar = () => {
 							lg:text-base lg:justify-between lg:max-w-md lg:flex-shrink lg:mx-auto'
 							onClick={stopBubbling}>
 							<li>
-								<Link href='#'>
+								<Link href='#about'>
 									<a>
 										<span className='font-averia text-primary-color'>01.</span> About
 									</a>
