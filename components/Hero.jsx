@@ -1,7 +1,7 @@
 import next from 'next'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
-import Link from 'next/link'
+import styles from '../styles/Hero.module.scss'
 
 const Container = dynamic(() => import('./Container'))
 
@@ -66,6 +66,24 @@ const Hero = () => {
 							I&apos;m a front-end developer based in Bandung, Indonesia 🇮🇩 with high interest in
 							the software industry.
 						</p>
+						<div className='flex flex-col gap-6 pt-2 lg:flex-row'>
+							<button
+								className='px-9 py-4 text-xl font-medium bg-primary-color bg-opacity-100
+																										rounded-lg shadow-lg text-text-light 
+																										
+																										active:bg-opacity-90
+
+																										focus:outline-none focus:underline focus:ring-4
+																										focus:ring-primary-color focus:bg-opacity-75
+																										
+																										hover:underline hover:bg-opacity-80 hover:shadow-xl'>
+								Hire Me!
+							</button>
+							<button className={styles.secButton}>
+								<span className='underline'>Resume</span> <span className={styles.icon}>📁</span>
+								<span className={styles.icon2}>📂</span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</Container>
