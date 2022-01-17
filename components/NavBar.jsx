@@ -65,7 +65,7 @@ const NavBar = () => {
 						onClick={mobileNavToggle}
 						className={`${
 							isMobileNavDisplayed ? 'absolute' : 'hidden'
-						} flex flex-col items-center justify-center w-full 
+						} flex flex-col z-10 items-center justify-center w-full 
 						flex-1 text-center bg-dark-mode dark:bg-gray-900 
 						bg-opacity-60 dark:bg-opacity-80 top-0 left-0 min-h-screen 
 						cursor-pointer text-xl lg:block lg:relative lg:w-auto 
