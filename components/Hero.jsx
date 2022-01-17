@@ -8,7 +8,7 @@ const Container = dynamic(() => import('./Container'))
 // Hero Section / About Section
 const Hero = () => {
 	return (
-		<section className='pb-14 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full' id='#about'>
+		<section className='py-8 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full' id='#about'>
 			<Container>
 				<div
 					className='flex flex-col text-center lg:flex-row lg:justify-between
@@ -18,7 +18,7 @@ const Hero = () => {
 						className='relative flex-grow mx-auto px-4 min-w-[343px]
 																					min-h-[311px] sm:min-w-[350px] sm:min-h-full
 																					sm:px-0 lg:order-1 lg:mx-0 lg:max-w-[442px]
-																					lg:max-h-[442px] 2xl:max-w-[560px] 2xl:max-h-[535px]'>
+																					lg:max-h-[442px] 2xl:max-w-[560px] 2xl:max-h-[560px]'>
 						<Image
 							src='/Cat Full.png'
 							alt='Cat Againts The World.'
@@ -33,7 +33,7 @@ const Hero = () => {
 					</div>
 
 					{/* Text Section */}
-					<div className='flex flex-col gap-4 items-center pt-4 lg:order-0 lg:items-start'>
+					<div className='flex flex-col gap-4 items-center pt-4 lg:order-0 lg:items-start lg:pt-0'>
 						<p className=''>
 							<span className='font-averia text-primary-color'>01.</span> About
 						</p>

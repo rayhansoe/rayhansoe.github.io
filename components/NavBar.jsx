@@ -51,9 +51,10 @@ const NavBar = () => {
 	}
 
 	return (
-		<section className='navbar pt-8'>
+		<section className='navbar py-8'>
 			<Container>
 				<div className='nav flex justify-between items-center'>
+					{/* LOGO */}
 					<Link href='/'>
 						<a>
 							<h2 className='font-averia font-bold text-3xl'>
@@ -61,6 +62,8 @@ const NavBar = () => {
 							</h2>
 						</a>
 					</Link>
+
+					{/* Nav Wrapper */}
 					<div
 						onClick={mobileNavToggle}
 						className={`${
@@ -71,6 +74,7 @@ const NavBar = () => {
 						cursor-pointer text-xl lg:block lg:relative lg:w-auto 
 						lg:min-h-full lg:flex-grow lg:dark:bg-opacity-0 
 						lg:bg-opacity-0 lg:text-lg lg:justify-between lg:cursor-default`}>
+						{/* Nav Menu */}
 						<ul
 							className='relative flex flex-col items-center justify-center
 							p-24 gap-8 bg-white text-text-dark dark:text-text-light 
@@ -101,8 +105,13 @@ const NavBar = () => {
 							</li>
 						</ul>
 					</div>
+
+					{/* Buttons Wrapper */}
 					<div className='menu-buttons flex gap-4'>
+						{/* Toggle Dark/Light Mode */}
 						{renderThemeChanger()}
+
+						{/* Burger Menu */}
 						<MenuIcon className='w-7 h-7 lg:hidden' role='button' onClick={mobileNavToggle} />
 					</div>
 				</div>
