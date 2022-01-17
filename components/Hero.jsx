@@ -1,12 +1,20 @@
-import next from 'next'
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
+import { useRouter } from 'next/router'
 import styles from '../styles/Hero.module.scss'
+import Link from 'next/link'
 
 const Container = dynamic(() => import('./Container'))
 
 // Hero Section / About Section
 const Hero = () => {
+	const router = useRouter()
+
+	const isHired = e => {
+		e.preventDefault()
+		router.push('mailto:rayhan.rhssoe2@gmail.com')
+	}
+
 	return (
 		<section className='py-8 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full' id='#about'>
 			<Container>
@@ -68,6 +76,7 @@ const Hero = () => {
 						</p>
 						<div className='flex flex-col gap-6 pt-2 lg:flex-row'>
 							<button
+								onClick={isHired}
 								className='px-9 py-4 text-xl font-medium bg-primary-color bg-opacity-100
 																										rounded-lg shadow-lg text-text-light 
 																										
@@ -80,8 +89,13 @@ const Hero = () => {
 								Hire Me!
 							</button>
 							<button className={styles.secButton}>
-								<span className='underline'>Resume</span> <span className={styles.icon}>📁</span>
-								<span className={styles.icon2}>📂</span>
+								<Link href='/Resume.pdf'>
+									<a download target='_blank'>
+										<span className={styles.text}>Resume</span>{' '}
+										<span className={styles.icon}>📁</span>
+										<span className={styles.icon2}>📂</span>
+									</a>
+								</Link>
 							</button>
 						</div>
 					</div>
