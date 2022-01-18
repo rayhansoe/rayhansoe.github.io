@@ -100,7 +100,7 @@ const NavBar = () => {
 							<li>
 								<Link href='#'>
 									<a>
-										<span className='font-averia text-primary-color'>03.</span> Project
+										<span className='font-averia text-primary-color'>03.</span> Contact
 									</a>
 								</Link>
 							</li>
