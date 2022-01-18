@@ -1,6 +1,6 @@
-import { useTheme } from 'next-themes'
-import dynamic from 'next/dynamic'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+import { useTheme } from 'next-themes'
 import { useCallback, useEffect, useState } from 'react'
 import { MoonIcon, SunIcon, MenuIcon } from '@heroicons/react/solid'
 
@@ -14,6 +14,7 @@ const NavBar = () => {
 	const mobileNavToggle = e => {
 		e.stopPropagation()
 		setIsMobileNavDisplayed(curr => !curr)
+		document.body.classList.toggle('overflow-y-hidden')
 	}
 	const stopBubbling = e => {
 		e.stopPropagation()
@@ -70,7 +71,7 @@ const NavBar = () => {
 							isMobileNavDisplayed ? 'absolute' : 'hidden'
 						} flex flex-col z-10 items-center justify-center w-full 
 						flex-1 text-center bg-dark-mode dark:bg-gray-900 
-						bg-opacity-60 dark:bg-opacity-80 top-0 left-0 min-h-screen 
+						bg-opacity-60 dark:bg-opacity-80 top-0 left-0 min-h-full 
 						cursor-pointer text-xl lg:block lg:relative lg:w-auto 
 						lg:min-h-full lg:flex-grow lg:dark:bg-opacity-0 
 						lg:bg-opacity-0 lg:text-lg lg:justify-between lg:cursor-default`}>
@@ -83,14 +84,14 @@ const NavBar = () => {
 							lg:text-base lg:justify-between lg:max-w-md lg:flex-shrink lg:mx-auto'
 							onClick={stopBubbling}>
 							<li>
-								<Link href='#about'>
+								<Link href='/'>
 									<a>
 										<span className='font-averia text-primary-color'>01.</span> About
 									</a>
 								</Link>
 							</li>
 							<li>
-								<Link href='#'>
+								<Link href='/projects'>
 									<a>
 										<span className='font-averia text-primary-color'>02.</span> Project
 									</a>
