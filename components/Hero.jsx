@@ -19,7 +19,7 @@ const Hero = () => {
 		<section className='py-8 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full' id='#about'>
 			<Container>
 				<div
-					className='flex flex-col text-center lg:flex-row lg:justify-between
+					className='flex flex-col xs:text-center lg:flex-row lg:justify-between
 																				lg:items-center lg:text-left lg:gap-16'>
 					{/* Image */}
 					<div
@@ -31,6 +31,7 @@ const Hero = () => {
 							src='/Cat Full.png'
 							alt='Cat Againts The World.'
 							placeholder='blur'
+							loading='eager'
 							blurDataURL
 							width='100%'
 							height='100%'
@@ -41,8 +42,8 @@ const Hero = () => {
 					</div>
 
 					{/* Text Section */}
-					<div className='flex flex-col gap-4 items-center pt-4 lg:order-0 lg:items-start lg:pt-0'>
-						<p className=''>
+					<div className='flex flex-col gap-4 pt-4 xs:items-center lg:order-0 lg:items-start lg:pt-0'>
+						<p>
 							<span className='font-averia text-primary-color'>01.</span> About
 						</p>
 						<h1 className='font-averia text-3xl sm:text-5xl'>
