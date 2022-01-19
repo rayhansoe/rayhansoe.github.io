@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import { useRouter } from 'next/router'
-import styles from '../styles/Hero.module.scss'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+import Cat from '../public/Cat Full.webp'
+
+import styles from '../styles/Hero.module.scss'
 
 const Container = dynamic(() => import('./Container'))
 
@@ -28,11 +31,9 @@ const Hero = () => {
 																					sm:px-0 lg:order-1 lg:mx-0 lg:max-w-[442px]
 																					lg:max-h-[442px] 2xl:max-w-[560px] 2xl:max-h-[560px]'>
 						<Image
-							src='/Cat Full.webp'
+							src={Cat}
 							alt='Cat Againts The World.'
 							placeholder='blur'
-							loading='eager'
-							blurDataURL
 							width='100%'
 							height='100%'
 							layout='responsive'

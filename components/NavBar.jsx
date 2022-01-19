@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { useTheme } from 'next-themes'
+
 import { useCallback, useEffect, useState } from 'react'
+
 import { MoonIcon, SunIcon, MenuIcon } from '@heroicons/react/solid'
 
 const Container = dynamic(() => import('./Container'))
@@ -81,7 +83,7 @@ const NavBar = () => {
 							p-24 gap-8 bg-white text-text-dark dark:text-text-light 
 							dark:bg-dark-mode rounded pointer-events-auto cursor-default 
 							z-20 lg:p-0 lg:flex-row lg:bg-opacity-0 lg:dark:bg-opacity-0 
-							lg:text-base lg:justify-between lg:max-w-md lg:flex-shrink lg:mx-auto'
+							lg:text-base lg:justify-between lg:max-w-[16rem] lg:flex-shrink lg:mx-auto'
 							onClick={stopBubbling}>
 							<li>
 								<Link href='/'>
@@ -94,13 +96,6 @@ const NavBar = () => {
 								<Link href='/projects'>
 									<a>
 										<span className='font-averia text-primary-color'>02.</span> Project
-									</a>
-								</Link>
-							</li>
-							<li>
-								<Link href='#'>
-									<a>
-										<span className='font-averia text-primary-color'>03.</span> Contact
 									</a>
 								</Link>
 							</li>

@@ -2,8 +2,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { useTheme } from 'next-themes'
-import { ExternalLinkIcon } from '@heroicons/react/outline'
+
 import { useEffect, useState } from 'react'
+
+import { ExternalLinkIcon } from '@heroicons/react/outline'
+
+import { ProjectPreview } from '../public/project1-preview.webp'
 
 const Container = dynamic(() => import('./Container'))
 
@@ -68,11 +72,9 @@ const Projects = () => {
 							<Link href='https://rayhansoe.github.io/moviesdb/'>
 								<a target='_blank'>
 									<Image
-										src='/project1-preview.webp'
+										src={ProjectPreview}
 										alt='Project Preview.'
 										placeholder='blur'
-										blurDataURL
-										loading='eager'
 										width='100%'
 										height='69.8701298701%'
 										layout='responsive'
