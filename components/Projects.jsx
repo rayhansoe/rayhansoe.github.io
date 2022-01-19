@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 
 import { ExternalLinkIcon } from '@heroicons/react/outline'
 
-import { ProjectPreview } from '../public/project1-preview.webp'
+import ProjectPreview from '../public/project1-preview.webp'
 
 const Container = dynamic(() => import('./Container'))
 
