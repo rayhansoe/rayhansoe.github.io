@@ -31,7 +31,7 @@ const Hero = () => {
 																					sm:px-0 lg:order-1 lg:mx-0 lg:max-w-[442px]
 																					lg:max-h-[442px] 2xl:max-w-[560px] 2xl:max-h-[560px]'>
 						<Image
-							priority
+							loading='eager'
 							src={Cat}
 							alt='Cat Againts The World.'
 							placeholder='blur'

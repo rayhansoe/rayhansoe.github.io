@@ -72,6 +72,7 @@ const Projects = () => {
 							<Link href='https://rayhansoe.github.io/moviesdb/'>
 								<a target='_blank'>
 									<Image
+										loading='eager'
 										src={ProjectPreview}
 										alt='Project Preview.'
 										placeholder='blur'
