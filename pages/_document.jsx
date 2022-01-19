@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html>
+			<Html className='text-text-light dark:text-text-dark'>
 				<Head>
 					<link rel='preconnect' href='https://fonts.googleapis.com' />
 					<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />
@@ -17,7 +17,7 @@ class MyDocument extends Document {
 						rel='stylesheet'
 					/>
 				</Head>
-				<body>
+				<body className='text-text-light dark:text-text-dark'>
 					<Main />
 					<NextScript />
 				</body>
