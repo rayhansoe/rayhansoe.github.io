@@ -8,7 +8,6 @@ function BGImage() {
 			{/* DARK */}
 			<div className='hidden fixed bg-dark-mode z-[-1] h-screen w-screen overflow-hidden dark:block'>
 				<Image
-					priority
 					alt='BG'
 					src={BGDark}
 					placeholder='blur'
@@ -22,7 +21,6 @@ function BGImage() {
 			{/* Light */}
 			<div className='fixed z-[-1] bg-text-light h-screen w-screen overflow-hidden dark:hidden'>
 				<Image
-					priority
 					draggable='false'
 					alt='BG'
 					src={BGLight}
