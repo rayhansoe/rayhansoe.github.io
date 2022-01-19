@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import BGDark from '../public/BG-RAW (2).webp'
+import BGLight from '../public/BG-LIGHT-RAW (1).webp'
 
 function BGImage() {
 	return (
@@ -8,9 +10,8 @@ function BGImage() {
 				<Image
 					priority
 					alt='BG'
-					src='/BG-RAW (2).webp'
+					src={BGDark}
 					placeholder='blur'
-					blurDataURL
 					layout='fill'
 					objectFit='cover'
 					quality={100}
@@ -21,12 +22,11 @@ function BGImage() {
 			{/* Light */}
 			<div className='fixed z-[-1] bg-text-light h-screen w-screen overflow-hidden dark:hidden'>
 				<Image
-					draggable='false'
 					priority
+					draggable='false'
 					alt='BG'
-					src='/BG-LIGHT-RAW (1).webp'
+					src={BGLight}
 					placeholder='blur'
-					blurDataURL
 					layout='fill'
 					objectFit='cover'
 					quality={100}
