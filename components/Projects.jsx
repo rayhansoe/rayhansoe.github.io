@@ -58,62 +58,65 @@ const Projects = () => {
 		}
 	}
 	return (
-		<section className='lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full' id='projects'>
+		<section className='py-10 lg:pb-26 2xl:max-w-[1440px] 2xl:mx-auto 2xl:w-full' id='projects'>
 			<Container>
-				<div className='flex flex-col items-center gap-4 rounded-lg sm:flex-row sm:justify-between'>
-					{/* Image */}
-					<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1 lg:max-w-[50%]'>
-						<Link href='https://rayhansoe.github.io/moviesdb/'>
-							<a target='_blank'>
-								<Image
-									src='/project1-preview.png'
-									alt='Project Preview.'
-									placeholder='blur'
-									blurDataURL
-									loading='eager'
-									width='100%'
-									height='69.8701298701%'
-									layout='responsive'
-									objectFit='cover'
-									quality={100}
-								/>
-							</a>
-						</Link>
-					</div>
-
-					{/* Text Section */}
-					<div className='flex flex-col items-baseline gap-2  lg:max-w-[50%]'>
-						<h4 className='font-averia'>Featured Project</h4>
-						<Link href='https://rayhansoe.github.io/moviesdb/'>
-							<a target='_blank'>
-								<h1 className='text-2xl font-semibold hover:underline'>MoviesDB</h1>
-							</a>
-						</Link>
-						<div className='desc'>
-							<p>
-								A Twitter Bot for GirlScript Foundation that automatically retweets, favourites the
-								tweets and follows the users who tweet with hashtag #girlscript. Checkout my tech
-								blog on how to create it HERE
-							</p>
-						</div>
-						<ul className='flex gap-4 py-2 flex-wrap'>
-							<li className=''>HTML</li>
-							<li className=''>CSS</li>
-							<li className=''>Javascript</li>
-							<li className=''>React</li>
-						</ul>
-						{/* Source */}
-						<div className='flex gap-4'>
-							<Link href='https://github.com/rayhansoe/moviesdb'>
-								<a target='_blank' className='hover:opacity-75'>
-									{renderGitHubIcons()}
-								</a>
-							</Link>
+				<div className='flex flex-col gap-14'>
+					{/* Project 1 */}
+					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
+						{/* Image */}
+						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1 lg:max-w-[50%]'>
 							<Link href='https://rayhansoe.github.io/moviesdb/'>
 								<a target='_blank'>
-									<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
+									<Image
+										src='/project1-preview.webp'
+										alt='Project Preview.'
+										placeholder='blur'
+										blurDataURL
+										loading='eager'
+										width='100%'
+										height='69.8701298701%'
+										layout='responsive'
+										objectFit='cover'
+										quality={100}
+									/>
 								</a>
 							</Link>
+						</div>
+
+						{/* Text Section */}
+						<div className='flex flex-col items-baseline gap-2  lg:max-w-[50%]'>
+							<h4 className='font-averia'>Featured Project</h4>
+							<Link href='https://rayhansoe.github.io/moviesdb/'>
+								<a target='_blank'>
+									<h1 className='text-2xl font-semibold hover:underline'>MoviesDB</h1>
+								</a>
+							</Link>
+							<div className='desc'>
+								<p>
+									A Twitter Bot for GirlScript Foundation that automatically retweets, favourites
+									the tweets and follows the users who tweet with hashtag #girlscript. Checkout my
+									tech blog on how to create it HERE
+								</p>
+							</div>
+							<ul className='flex gap-4 py-2 flex-wrap'>
+								<li className=''>HTML</li>
+								<li className=''>CSS</li>
+								<li className=''>Javascript</li>
+								<li className=''>React</li>
+							</ul>
+							{/* Source */}
+							<div className='flex gap-4'>
+								<Link href='https://github.com/rayhansoe/moviesdb'>
+									<a target='_blank' className='hover:opacity-75'>
+										{renderGitHubIcons()}
+									</a>
+								</Link>
+								<Link href='https://rayhansoe.github.io/moviesdb/'>
+									<a target='_blank'>
+										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
+									</a>
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>
