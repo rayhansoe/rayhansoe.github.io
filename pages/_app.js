@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
 				<title>Rayhan Soe | Front End Developer</title>
 			</Head>
 			<ThemeProvider enableSystem={true} attribute='class'>
-				<BGimg />
 				<Layout>
 					<Component {...pageProps} />
 				</Layout>

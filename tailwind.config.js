@@ -13,6 +13,10 @@ module.exports = {
 			'2xl': '1536px',
 		},
 		extend: {
+			backgroundImage: {
+				'dark-texture': 'url(../public/BG-Dark.webp)',
+				'light-texture': 'url(../public/BG-Light.webp)',
+			},
 			zIndex: {
 				0: '0',
 			},

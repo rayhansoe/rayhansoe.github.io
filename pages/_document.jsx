@@ -8,16 +8,19 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html className='text-text-light dark:text-text-dark'>
+			<Html className='text-text-light dark:text-text-dark '>
 				<Head>
+					<meta charset='UTF-8' />
+					<meta httpEquiv='X-UA-Compatible' content='IE=edge' />
+					<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 					<link rel='preconnect' href='https://fonts.googleapis.com' />
-					<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />
+					<link rel='preconnect' href='https://fonts.gstatic.com' />
 					<link
 						href='https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'
 						rel='stylesheet'
 					/>
 				</Head>
-				<body className='text-text-dark dark:text-text-light '>
+				<body className='text-text-dark dark:text-text-light bg-light-texture dark:bg-dark-texture '>
 					<Main />
 					<NextScript />
 				</body>
