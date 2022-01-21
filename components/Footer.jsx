@@ -8,8 +8,8 @@ const Footer = () => {
 		<section className='py-6'>
 			<Container>
 				<footer className='flex flex-col items-center justify-center'>
-					<h4 className='font-averia'>Made with ❤️ in Indonesia.</h4>
-					<h4 className='font-averia'>
+					<h4 className='font-averia text-center'>Made with ❤️ in Indonesia.</h4>
+					<h4 className='font-averia text-center'>
 						Develop use{' '}
 						<Link href='https://nextjs.org/'>
 							<a target='_blank' className='text-primary-color hover:underline'>
