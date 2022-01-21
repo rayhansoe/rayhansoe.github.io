@@ -5,7 +5,6 @@ import dynamic from 'next/dynamic'
 import Head from 'next/head'
 
 const Layout = dynamic(() => import('../components/Layout'))
-const BGimg = dynamic(() => import('../components/BGimg'))
 
 function MyApp({ Component, pageProps }) {
 	return (
