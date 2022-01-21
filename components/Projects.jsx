@@ -7,7 +7,12 @@ import { useEffect, useState } from 'react'
 
 import { ExternalLinkIcon } from '@heroicons/react/outline'
 
-import ProjectPreview from '../public/project1-preview.webp'
+import RafiSoe from '../public/rafisoe.webp'
+import StoreGG from '../public/StoreGG.webp'
+import MoviesDB from '../public/MoviesDB.webp'
+import OldVersion from '../public/Old version.webp'
+import JokesGenerator from '../public/Jokes Generator.webp'
+import StarMatchGame from '../public/star match game.webp'
 
 const Container = dynamic(() => import('./Container'))
 
@@ -65,15 +70,133 @@ const Projects = () => {
 		<section className='py-10 lg:pb-26 2xl:max-w-[1440px] 2xl:mx-auto 2xl:w-full' id='projects'>
 			<Container>
 				<div className='flex flex-col gap-14'>
-					{/* Project 1 */}
+					{/* Project 1 v.1 */}
+					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
+						{/* Image */}
+						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1 lg:max-w-[50%]'>
+							<Link href='https://storegg-latihan.vercel.app/'>
+								<a target='_blank'>
+									<Image
+										src={StoreGG}
+										alt='StoreGG Design bye BWA'
+										placeholder='blur'
+										width='100%'
+										height='69.8701298701%'
+										layout='responsive'
+										objectFit='cover'
+										quality={100}
+									/>
+								</a>
+							</Link>
+						</div>
+
+						{/* Text Section */}
+						<div className='flex flex-col items-baseline gap-2  lg:max-w-[50%]'>
+							<h4 className='font-averia'>Featured Project</h4>
+							<Link href='https://storegg-latihan.vercel.app/'>
+								<a target='_blank'>
+									<h1 className='text-2xl font-semibold hover:underline'>StoreGG</h1>
+								</a>
+							</Link>
+							<div className='desc'>
+								<p>
+									A Twitter Bot for GirlScript Foundation that automatically retweets, favourites
+									the tweets and follows the users who tweet with hashtag #girlscript. Checkout my
+									tech blog on how to create it HERE
+								</p>
+							</div>
+							<ul className='flex gap-4 py-2 flex-wrap'>
+								<li className=''>HTML</li>
+								<li className=''>CSS</li>
+								<li className=''>Javascript</li>
+								<li className=''>React</li>
+							</ul>
+							{/* Source */}
+							<div className='flex gap-4'>
+								<Link href='https://github.com/rayhansoe/STOREGG-LATIHAN'>
+									<a target='_blank' className='hover:opacity-75'>
+										{renderGitHubIcons()}
+									</a>
+								</Link>
+								<Link href='https://storegg-latihan.vercel.app/'>
+									<a target='_blank'>
+										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
+									</a>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					{/* Project 2 v.2 */}
+					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
+						{/* Image */}
+						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] lg:max-w-[50%]'>
+							<Link href='https://chuck-norris-jokes-beta-three.vercel.app/'>
+								<a target='_blank'>
+									<Image
+										src={JokesGenerator}
+										alt='Chuck Norris (Jokes Generator).'
+										placeholder='blur'
+										blurDataURL
+										loading='eager'
+										width='100%'
+										height='69.8701298701%'
+										layout='responsive'
+										objectFit='cover'
+										quality={100}
+									/>
+								</a>
+							</Link>
+						</div>
+
+						{/* Text Section */}
+						<div className='flex flex-col items-baseline gap-2 sm:items-end lg:max-w-[50%]'>
+							<h4 className='font-averia'>Featured Project</h4>
+							<Link href='https://chuck-norris-jokes-beta-three.vercel.app/'>
+								<a target='_blank'>
+									<h1 className='text-2xl font-semibold hover:underline'>
+										Chuck Norris (Jokes Generator)
+									</h1>
+								</a>
+							</Link>
+							<div className='sm:text-right'>
+								<p>
+									A Twitter Bot for GirlScript Foundation that automatically retweets, favourites
+									the tweets and follows the users who tweet with hashtag #girlscript. Checkout my
+									tech blog on how to create it HERE
+								</p>
+							</div>
+							<ul className='flex gap-4 py-2 flex-wrap'>
+								<li className=''>HTML</li>
+								<li className=''>CSS</li>
+								<li className=''>Javascript</li>
+								<li className=''>React</li>
+							</ul>
+							{/* Source */}
+							<div className='flex gap-4'>
+								<Link href='https://github.com/rayhansoe/chuck-norris-jokes'>
+									<a target='_blank' className='hover:opacity-75'>
+										{renderGitHubIcons()}
+									</a>
+								</Link>
+								<Link href='https://chuck-norris-jokes-beta-three.vercel.app/'>
+									<a target='_blank'>
+										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
+									</a>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					{/* Project 3 v.1 */}
 					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
 						{/* Image */}
 						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1 lg:max-w-[50%]'>
 							<Link href='https://rayhansoe.github.io/moviesdb/'>
 								<a target='_blank'>
 									<Image
-										src={ProjectPreview}
-										alt='Project Preview.'
+										src={MoviesDB}
+										alt='Movies Database'
 										placeholder='blur'
 										width='100%'
 										height='69.8701298701%'
@@ -114,6 +237,185 @@ const Projects = () => {
 									</a>
 								</Link>
 								<Link href='https://rayhansoe.github.io/moviesdb/'>
+									<a target='_blank'>
+										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
+									</a>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					{/* Project 4 v.2 */}
+					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
+						{/* Image */}
+						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] lg:max-w-[50%]'>
+							<Link href='https://rayhansoe.github.io/'>
+								<a target='_blank'>
+									<Image
+										src={OldVersion}
+										alt="rayhansoe's portofolio"
+										placeholder='blur'
+										blurDataURL
+										loading='eager'
+										width='100%'
+										height='69.8701298701%'
+										layout='responsive'
+										objectFit='cover'
+										quality={100}
+									/>
+								</a>
+							</Link>
+						</div>
+
+						{/* Text Section */}
+						<div className='flex flex-col items-baseline gap-2 sm:items-end lg:max-w-[50%]'>
+							<h4 className='font-averia'>Featured Project</h4>
+							<Link href='https://rayhansoe.github.io/'>
+								<a target='_blank'>
+									<h1 className='text-2xl font-semibold hover:underline'>
+										Rayhansoe&apos;s Portfolio (old version)
+									</h1>
+								</a>
+							</Link>
+							<div className='sm:text-right'>
+								<p>
+									A Twitter Bot for GirlScript Foundation that automatically retweets, favourites
+									the tweets and follows the users who tweet with hashtag #girlscript. Checkout my
+									tech blog on how to create it HERE
+								</p>
+							</div>
+							<ul className='flex gap-4 py-2 flex-wrap'>
+								<li className=''>HTML</li>
+								<li className=''>CSS</li>
+								<li className=''>Javascript</li>
+								<li className=''>React</li>
+							</ul>
+							{/* Source */}
+							<div className='flex gap-4'>
+								<Link href='https://github.com/rayhansoe/rayhansoe.github.io/tree/master'>
+									<a target='_blank' className='hover:opacity-75'>
+										{renderGitHubIcons()}
+									</a>
+								</Link>
+								<Link href='https://rayhansoe.github.io/'>
+									<a target='_blank'>
+										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
+									</a>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					{/* Project 5 v.1 */}
+					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
+						{/* Image */}
+						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1 lg:max-w-[50%]'>
+							<Link href='https://rafisoe.vercel.app/'>
+								<a target='_blank'>
+									<Image
+										src={RafiSoe}
+										alt="Rafisoe's Portfolio"
+										placeholder='blur'
+										width='100%'
+										height='69.8701298701%'
+										layout='responsive'
+										objectFit='cover'
+										quality={100}
+									/>
+								</a>
+							</Link>
+						</div>
+
+						{/* Text Section */}
+						<div className='flex flex-col items-baseline gap-2  lg:max-w-[50%]'>
+							<h4 className='font-averia'>Featured Project</h4>
+							<Link href='https://rafisoe.vercel.app/'>
+								<a target='_blank'>
+									<h1 className='text-2xl font-semibold hover:underline'>
+										Rafisoe&apos;s Portfolio
+									</h1>
+								</a>
+							</Link>
+							<div className='desc'>
+								<p>
+									A Twitter Bot for GirlScript Foundation that automatically retweets, favourites
+									the tweets and follows the users who tweet with hashtag #girlscript. Checkout my
+									tech blog on how to create it HERE
+								</p>
+							</div>
+							<ul className='flex gap-4 py-2 flex-wrap'>
+								<li className=''>HTML</li>
+								<li className=''>CSS</li>
+								<li className=''>Javascript</li>
+								<li className=''>React</li>
+							</ul>
+							{/* Source */}
+							<div className='flex gap-4'>
+								<Link href='https://github.com/rayhansoe/rafisoe'>
+									<a target='_blank' className='hover:opacity-75'>
+										{renderGitHubIcons()}
+									</a>
+								</Link>
+								<Link href='https://rafisoe.vercel.app/'>
+									<a target='_blank'>
+										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
+									</a>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					{/* Project 6 v.2 */}
+					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
+						{/* Image */}
+						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] lg:max-w-[50%]'>
+							<Link href='https://rayhansoe.github.io/Star-Match-Game/'>
+								<a target='_blank'>
+									<Image
+										src={StarMatchGame}
+										alt='Star Match Game'
+										placeholder='blur'
+										blurDataURL
+										loading='eager'
+										width='100%'
+										height='69.8701298701%'
+										layout='responsive'
+										objectFit='cover'
+										quality={100}
+									/>
+								</a>
+							</Link>
+						</div>
+
+						{/* Text Section */}
+						<div className='flex flex-col items-baseline gap-2 sm:items-end lg:max-w-[50%]'>
+							<h4 className='font-averia'>Featured Project</h4>
+							<Link href='https://rayhansoe.github.io/Star-Match-Game/'>
+								<a target='_blank'>
+									<h1 className='text-2xl font-semibold hover:underline'>Star Match Game</h1>
+								</a>
+							</Link>
+							<div className='sm:text-right'>
+								<p>
+									A Twitter Bot for GirlScript Foundation that automatically retweets, favourites
+									the tweets and follows the users who tweet with hashtag #girlscript. Checkout my
+									tech blog on how to create it HERE
+								</p>
+							</div>
+							<ul className='flex gap-4 py-2 flex-wrap'>
+								<li className=''>HTML</li>
+								<li className=''>CSS</li>
+								<li className=''>Javascript</li>
+								<li className=''>React</li>
+							</ul>
+							{/* Source */}
+							<div className='flex gap-4'>
+								<Link href='https://github.com/rayhansoe/Star-Match-Game'>
+									<a target='_blank' className='hover:opacity-75'>
+										{renderGitHubIcons()}
+									</a>
+								</Link>
+								<Link href='https://rayhansoe.github.io/Star-Match-Game/'>
 									<a target='_blank'>
 										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
 									</a>
