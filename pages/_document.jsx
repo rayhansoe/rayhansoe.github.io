@@ -8,11 +8,8 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html className='text-text-light dark:text-text-dark '>
+			<Html>
 				<Head>
-					<meta charset='UTF-8' />
-					<meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-					<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 					<link rel='preconnect' href='https://fonts.googleapis.com' />
 					<link rel='preconnect' href='https://fonts.gstatic.com' />
 					<link
@@ -20,7 +17,7 @@ class MyDocument extends Document {
 						rel='stylesheet'
 					/>
 				</Head>
-				<body className='text-text-dark dark:text-text-light bg-light-texture dark:bg-dark-texture '>
+				<body className='text-text-dark bg-text-light bg-light-texture dark:bg-dark-mode dark:bg-dark-texture dark:text-text-light'>
 					<Main />
 					<NextScript />
 				</body>
