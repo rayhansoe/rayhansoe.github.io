@@ -17,7 +17,7 @@ const Footer = () => {
 							</a>
 						</Link>
 						,{' '}
-						<Link href='tailwindcss.com'>
+						<Link href='https://tailwindcss.com'>
 							<a target='_blank' className='text-primary-color hover:underline'>
 								Tailwind CSS
 							</a>
