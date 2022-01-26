@@ -19,7 +19,7 @@ const Hero = () => {
 	}
 
 	return (
-		<section className='py-8 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full'>
+		<section className='py-6 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full'>
 			<Container>
 				<div
 					className='flex flex-col xs:text-center lg:flex-row lg:justify-between

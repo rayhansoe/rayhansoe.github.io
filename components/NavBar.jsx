@@ -54,7 +54,7 @@ const NavBar = () => {
 	}
 
 	return (
-		<section className='navbar py-8'>
+		<section className='navbar py-6'>
 			<Container>
 				<div className='nav flex justify-between items-center'>
 					{/* LOGO */}

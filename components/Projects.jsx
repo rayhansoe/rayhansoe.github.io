@@ -139,9 +139,23 @@ const Projects = () => {
 	}
 
 	return (
-		<section className='py-10 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full'>
+		<section className='py-6 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full'>
 			<Container>
-				<div className='flex flex-col gap-14'>{renderProjects()}</div>
+				<figcaption className='py-6 font-medium italic text-center text-xl opacity-80'>
+					<p>
+						&quot; I have a design portfolio too, you can{' '}
+						<Link href='https://dribbble.com/rayhansoe'>
+							<a target='_blank' className='text-primary-color hover:underline'>
+								check here
+							</a>
+						</Link>
+						. &quot;
+					</p>
+					{/* <p className='py-1 '></p> */}
+				</figcaption>
+				<div className='flex flex-col gap-14'>
+					<>{renderProjects()}</>
+				</div>
 			</Container>
 		</section>
 	)
