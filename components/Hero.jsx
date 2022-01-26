@@ -19,23 +19,22 @@ const Hero = () => {
 	}
 
 	return (
-		<section className='py-8 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full' id='#about'>
+		<section className='py-8 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full'>
 			<Container>
 				<div
 					className='flex flex-col xs:text-center lg:flex-row lg:justify-between
 																				lg:items-center lg:text-left lg:gap-16'>
 					{/* Image */}
 					<div
-						className='relative flex-grow mx-auto px-4 min-w-[343px]
-																					min-h-[311px] sm:min-w-[350px] sm:min-h-full
-																					sm:px-0 lg:order-1 lg:mx-0 lg:max-w-[442px]
-																					lg:max-h-[442px] 2xl:max-w-[560px] 2xl:max-h-[560px]'>
+						className='relative px-4 w-[90%] max mx-auto sm:max-w-[70%]
+																	md:max-w-[42.7%] md:px-0 lg:mx-0 lg:order-1
+																					'>
 						<Image
 							src={Cat}
 							alt='Cat Againts The World.'
 							placeholder='blur'
-							width='100%'
-							height='100%'
+							width='560'
+							height='535'
 							layout='responsive'
 							objectFit='contain'
 							quality={100}
@@ -43,7 +42,9 @@ const Hero = () => {
 					</div>
 
 					{/* Text Section */}
-					<div className='flex flex-col gap-4 pt-4 xs:items-center lg:order-0 lg:items-start lg:pt-0'>
+					<div
+						className='flex flex-col gap-4 pt-4 xs:items-center lg:order-0
+																					lg:items-start lg:pt-0 lg:max-w-[50%]'>
 						<p>
 							<span className='font-averia text-primary-color'>01.</span> About
 						</p>
