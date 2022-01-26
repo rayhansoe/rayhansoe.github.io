@@ -67,13 +67,18 @@ const Projects = () => {
 		}
 	}
 	return (
-		<section className='py-10 lg:pb-26 2xl:max-w-[1440px] 2xl:mx-auto 2xl:w-full' id='projects'>
+		<section className='py-10 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full'>
 			<Container>
 				<div className='flex flex-col gap-14'>
 					{/* Project 1 v.1 | StoreGG */}
-					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
+					<div
+						className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row
+																					sm:justify-between'>
 						{/* Image */}
-						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1 lg:max-w-[50%]'>
+						<div
+							className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75
+																						cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1
+																						lg:max-w-[50%]'>
 							<Link href='https://storegg-latihan.vercel.app/'>
 								<a target='_blank'>
 									<Image
