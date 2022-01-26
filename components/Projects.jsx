@@ -115,24 +115,24 @@ const Projects = () => {
 		},
 
 		// Data 6
-		{
-			id: 5,
-			title: 'Star Match Game',
-			desc: (
-				<p>
-					A Simple Web App that I made when I first learned reactjs. And I learned from this {''}
-					<Link href='https://www.pluralsight.com/courses/react-js-getting-started'>
-						<a className='text-primary-color hover:underline'>Pluralsight Course</a>
-					</Link>
-					.
-				</p>
-			),
-			techs: ['HTML'],
-			linkDemo: 'https://rayhansoe.github.io/Star-Match-Game/',
-			linkSource: 'https://github.com/rayhansoe/Star-Match-Game',
-			srcImg: StarMatchGame,
-			altImg: 'Star Match Game',
-		},
+		// {
+		// 	id: 5,
+		// 	title: 'Star Match Game',
+		// 	desc: (
+		// 		<p>
+		// 			A Simple Web App that I made when I first learned reactjs. And I learned from this {''}
+		// 			<Link href='https://www.pluralsight.com/courses/react-js-getting-started'>
+		// 				<a className='text-primary-color hover:underline'>Pluralsight Course</a>
+		// 			</Link>
+		// 			.
+		// 		</p>
+		// 	),
+		// 	techs: ['HTML'],
+		// 	linkDemo: 'https://rayhansoe.github.io/Star-Match-Game/',
+		// 	linkSource: 'https://github.com/rayhansoe/Star-Match-Game',
+		// 	srcImg: StarMatchGame,
+		// 	altImg: 'Star Match Game',
+		// },
 	]
 	const renderProjects = () => {
 		return data.map(p => <Project {...p} key={p.id} />)
