@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
 import { useTheme } from 'next-themes'
 
 import { useEffect, useState } from 'react'
@@ -123,68 +122,6 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 					</div>
 				</div>
 			</div>
-			{/* 
-			Project 2 v.2 | Chuck Norris
-					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
-						Image
-						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] lg:max-w-[50%]'>
-							<Link href='https://chuck-norris-jokes-beta-three.vercel.app/'>
-								<a target='_blank'>
-									<Image
-										src={JokesGenerator}
-										alt='Chuck Norris (Jokes Generator).'
-										placeholder='blur'
-										width='1280'
-										height='894'
-										layout='responsive'
-										objectFit='cover'
-										quality={100}
-									/>
-								</a>
-							</Link>
-						</div>
-
-						Text Section
-						<div className='flex flex-col items-baseline gap-2 sm:items-end lg:max-w-[50%]'>
-							<h4 className='font-averia'>Featured Project</h4>
-							<Link href='https://chuck-norris-jokes-beta-three.vercel.app/'>
-								<a target='_blank'>
-									<h1 className='text-2xl font-semibold hover:underline'>
-										Chuck Norris (Jokes Generator)
-									</h1>
-								</a>
-							</Link>
-							<div className='sm:text-right lg:p-8 lg:shadow-xl lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:outline lg:hover:outline-white lg:hover:dark:outline-slate-600'>
-								<p>
-									Chuck Norris Jokes Generator that I built using public API (
-									<Link href='https://api.chucknorris.io/'>
-										<a className='text-primary-color hover:underline'>Chuck Norris API</a>
-									</Link>
-									). And for tech, I&apos;m using React, Material UI, Styled Component, and React
-									Router.
-								</p>
-							</div>
-							<ul className='flex gap-4 py-2 flex-wrap'>
-								<li>React</li>
-								<li>Material UI</li>
-								<li>Styled Component</li>
-								<li>React Router</li>
-							</ul>
-							Source
-							<div className='flex gap-4'>
-								<Link href='https://github.com/rayhansoe/chuck-norris-jokes'>
-									<a target='_blank' className='hover:opacity-75'>
-										{renderGitHubIcons()}
-									</a>
-								</Link>
-								<Link href='https://chuck-norris-jokes-beta-three.vercel.app/'>
-									<a target='_blank'>
-										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
-									</a>
-								</Link>
-							</div>
-						</div>
-					</div> */}
 		</>
 	)
 }
