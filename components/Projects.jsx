@@ -15,10 +15,133 @@ import JokesGenerator from '../public/Jokes Generator.webp'
 import StarMatchGame from '../public/star match game.webp'
 
 const Container = dynamic(() => import('./Container'))
+const Project = dynamic(() => import('./Project'))
 
 const Projects = () => {
 	const { systemTheme, theme, setTheme } = useTheme()
 	const [mounted, setMounted] = useState(false)
+	const data = [
+		// Data 1
+		{
+			id: 0,
+			title: 'StoreGG',
+			desc: (
+				<p>
+					This landing page is from{' '}
+					<Link href='https://buildwithangga.com/kelas/full-stack-javascript-developer-2021-website-top-up-voucher-game?thumbnail=pvksVt2Vrr.211&main_leads=searchresult'>
+						<a className='text-primary-color hover:underline'>BWA Class</a>
+					</Link>{' '}
+					that I rebuilt for learning Responsive Layout without any frameworks. And for next up,
+					I&apos;ll finish the class using my styles and changes.
+				</p>
+			),
+			techs: ['HTML', 'CSS', 'Javascript', 'Responsive'],
+			linkDemo: 'https://storegg-latihan.vercel.app/',
+			linkSource: 'https://github.com/rayhansoe/STOREGG-LATIHAN',
+			srcImg: StoreGG,
+			altImg: 'StoreGG Design by BWA',
+		},
+
+		// Data 2
+		{
+			id: 1,
+			title: 'Chuck Norris (Jokes Generator)',
+			desc: (
+				<p>
+					Chuck Norris Jokes Generator that I built using public API (
+					<Link href='https://api.chucknorris.io/'>
+						<a className='text-primary-color hover:underline'>Chuck Norris API</a>
+					</Link>
+					). And for tech, I&apos;m using React, Material UI, Styled Component, and React Router.
+				</p>
+			),
+			techs: ['React', 'Material UI', 'Styled Component', 'React Router'],
+			linkDemo: 'https://chuck-norris-jokes-beta-three.vercel.app/',
+			linkSource: 'https://github.com/rayhansoe/chuck-norris-jokes',
+			srcImg: JokesGenerator,
+			altImg: 'Chuck Norris (Jokes Generator).',
+		},
+
+		// Data 3
+		{
+			id: 2,
+			title: 'MoviesDB',
+			desc: (
+				<p>
+					This Movies Database is the first web app that I designed & built using React. I&apos;m
+					using this public API (
+					<Link href='https://www.themoviedb.org/'>
+						<a className='text-primary-color hover:underline'>TMDB</a>
+					</Link>
+					). And for tech, I&apos;m using only React.
+				</p>
+			),
+			techs: ['HTML', 'CSS', 'Javascript', 'React'],
+			linkDemo: 'https://rayhansoe.github.io/moviesdb/',
+			linkSource: 'https://github.com/rayhansoe/moviesdb',
+			srcImg: MoviesDB,
+			altImg: 'Movies Database',
+		},
+
+		// Data 4
+		{
+			id: 3,
+			title: 'Rayhansoe&apos;s Portfolio (old version)',
+			desc: (
+				<p>
+					The First Web Portfolio that I Designed by myself. And this is the old version using HTML,
+					SCSS, and Javascript. And for the new version, you can check it{' '}
+					<Link href='https://rayhansoe.vercel.app/'>
+						<a className='text-primary-color hover:underline'>HERE</a>
+					</Link>
+					.
+				</p>
+			),
+			techs: ['HTML', 'CSS', 'Javascript'],
+			linkDemo: 'https://rayhansoe.github.io/',
+			linkSource: 'https://github.com/rayhansoe/rayhansoe.github.io/tree/master',
+			srcImg: OldVersion,
+			altImg: `Rayhansoe's Portfolio`,
+		},
+
+		// Data 5
+		{
+			id: 4,
+			title: 'Rafisoe&apos;s Portfolio',
+			desc: (
+				<p>
+					Web Portfolio that I built for My Brother. And this is the first time I&lsquo;m using
+					TailwindCSS with Nextjs and AOS. And for now, this is only a plain Home Page. And I
+					promise I&apos;ll complete all pages and sections.
+				</p>
+			),
+			techs: ['Nextjs', 'React', 'TailwindCSS', 'AOS'],
+			linkDemo: 'https://rafisoe.vercel.app/',
+			linkSource: 'https://github.com/rayhansoe/rafisoe',
+			srcImg: RafiSoe,
+			altImg: `Rafisoe's Portfolio`,
+		},
+
+		// Data 6
+		{
+			id: 5,
+			title: 'Star Match Game',
+			desc: (
+				<p>
+					A Simple Web App that I made when I first learned reactjs. And I learned from this {''}
+					<Link href='https://www.pluralsight.com/courses/react-js-getting-started'>
+						<a className='text-primary-color hover:underline'>Pluralsight Course</a>
+					</Link>
+					.
+				</p>
+			),
+			techs: ['HTML'],
+			linkDemo: 'https://rayhansoe.github.io/Star-Match-Game/',
+			linkSource: 'https://github.com/rayhansoe/Star-Match-Game',
+			srcImg: StarMatchGame,
+			altImg: 'Star Match Game',
+		},
+	]
 
 	useEffect(() => {
 		setMounted(true)
@@ -66,374 +189,15 @@ const Projects = () => {
 			)
 		}
 	}
+
+	const renderProjects = () => {
+		return data.map(p => <Project {...p} key={p.id} />)
+	}
+
 	return (
 		<section className='py-10 lg:pb-26 2xl:max-w-[1536px] 2xl:mx-auto 2xl:w-full'>
 			<Container>
-				<div className='flex flex-col gap-14'>
-					{/* Project 1 v.1 | StoreGG */}
-					<div
-						className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row
-																					sm:justify-between'>
-						{/* Image */}
-						<div
-							className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75
-																						cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1
-																						lg:max-w-[50%]'>
-							<Link href='https://storegg-latihan.vercel.app/'>
-								<a target='_blank'>
-									<Image
-										src={StoreGG}
-										alt='StoreGG Design by BWA'
-										placeholder='blur'
-										width='1280'
-										height='894'
-										layout='responsive'
-										objectFit='cover'
-										quality={100}
-									/>
-								</a>
-							</Link>
-						</div>
-
-						{/* Text Section */}
-						<div className='flex flex-col items-baseline gap-2  lg:max-w-[50%]'>
-							<h4 className='font-averia'>Featured Project</h4>
-							<Link href='https://storegg-latihan.vercel.app/'>
-								<a target='_blank'>
-									<h1 className='text-2xl font-semibold hover:underline'>StoreGG</h1>
-								</a>
-							</Link>
-							<div className='lg:p-8 lg:shadow-xl lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:outline lg:hover:outline-white lg:hover:dark:outline-slate-600'>
-								<p>
-									This landing page is from{' '}
-									<Link href='https://buildwithangga.com/kelas/full-stack-javascript-developer-2021-website-top-up-voucher-game?thumbnail=pvksVt2Vrr.211&main_leads=searchresult'>
-										<a className='text-primary-color hover:underline'>BWA Class</a>
-									</Link>{' '}
-									that I rebuilt for learning Responsive Layout without any frameworks. And for next
-									up, I&apos;ll finish the class using my styles and changes.
-								</p>
-							</div>
-							<ul className='flex gap-4 py-2 flex-wrap'>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>Javascript</li>
-								<li>Responsive</li>
-							</ul>
-							{/* Source */}
-							<div className='flex gap-4'>
-								<Link href='https://github.com/rayhansoe/STOREGG-LATIHAN'>
-									<a target='_blank' className='hover:opacity-75'>
-										{renderGitHubIcons()}
-									</a>
-								</Link>
-								<Link href='https://storegg-latihan.vercel.app/'>
-									<a target='_blank'>
-										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
-									</a>
-								</Link>
-							</div>
-						</div>
-					</div>
-
-					{/* Project 2 v.2 | Chuck Norris */}
-					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
-						{/* Image */}
-						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] lg:max-w-[50%]'>
-							<Link href='https://chuck-norris-jokes-beta-three.vercel.app/'>
-								<a target='_blank'>
-									<Image
-										src={JokesGenerator}
-										alt='Chuck Norris (Jokes Generator).'
-										placeholder='blur'
-										width='1280'
-										height='894'
-										layout='responsive'
-										objectFit='cover'
-										quality={100}
-									/>
-								</a>
-							</Link>
-						</div>
-
-						{/* Text Section */}
-						<div className='flex flex-col items-baseline gap-2 sm:items-end lg:max-w-[50%]'>
-							<h4 className='font-averia'>Featured Project</h4>
-							<Link href='https://chuck-norris-jokes-beta-three.vercel.app/'>
-								<a target='_blank'>
-									<h1 className='text-2xl font-semibold hover:underline'>
-										Chuck Norris (Jokes Generator)
-									</h1>
-								</a>
-							</Link>
-							<div className='sm:text-right lg:p-8 lg:shadow-xl lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:outline lg:hover:outline-white lg:hover:dark:outline-slate-600'>
-								<p>
-									Chuck Norris Jokes Generator that I built using public API (
-									<Link href='https://api.chucknorris.io/'>
-										<a className='text-primary-color hover:underline'>Chuck Norris API</a>
-									</Link>
-									). And for tech, I&apos;m using React, Material UI, Styled Component, and React
-									Router.
-								</p>
-							</div>
-							<ul className='flex gap-4 py-2 flex-wrap'>
-								<li>React</li>
-								<li>Material UI</li>
-								<li>Styled Component</li>
-								<li>React Router</li>
-							</ul>
-							{/* Source */}
-							<div className='flex gap-4'>
-								<Link href='https://github.com/rayhansoe/chuck-norris-jokes'>
-									<a target='_blank' className='hover:opacity-75'>
-										{renderGitHubIcons()}
-									</a>
-								</Link>
-								<Link href='https://chuck-norris-jokes-beta-three.vercel.app/'>
-									<a target='_blank'>
-										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
-									</a>
-								</Link>
-							</div>
-						</div>
-					</div>
-
-					{/* Project 3 v.1 | MoviesDB */}
-					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
-						{/* Image */}
-						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1 lg:max-w-[50%]'>
-							<Link href='https://rayhansoe.github.io/moviesdb/'>
-								<a target='_blank'>
-									<Image
-										src={MoviesDB}
-										alt='Movies Database'
-										placeholder='blur'
-										width='1280'
-										height='894'
-										layout='responsive'
-										objectFit='cover'
-										quality={100}
-									/>
-								</a>
-							</Link>
-						</div>
-
-						{/* Text Section */}
-						<div className='flex flex-col items-baseline gap-2  lg:max-w-[50%]'>
-							<h4 className='font-averia'>Featured Project</h4>
-							<Link href='https://rayhansoe.github.io/moviesdb/'>
-								<a target='_blank'>
-									<h1 className='text-2xl font-semibold hover:underline'>MoviesDB</h1>
-								</a>
-							</Link>
-							<div className='lg:p-8 lg:shadow-xl lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:outline lg:hover:outline-white lg:hover:dark:outline-slate-600'>
-								<p>
-									This Movies Database is the first web app that I designed & built using React.
-									I&apos;m using this public API (
-									<Link href='https://www.themoviedb.org/'>
-										<a className='text-primary-color hover:underline'>TMDB</a>
-									</Link>
-									). And for tech, I&apos;m using only React.
-								</p>
-							</div>
-							<ul className='flex gap-4 py-2 flex-wrap'>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>Javascript</li>
-								<li>React</li>
-							</ul>
-							{/* Source */}
-							<div className='flex gap-4'>
-								<Link href='https://github.com/rayhansoe/moviesdb'>
-									<a target='_blank' className='hover:opacity-75'>
-										{renderGitHubIcons()}
-									</a>
-								</Link>
-								<Link href='https://rayhansoe.github.io/moviesdb/'>
-									<a target='_blank'>
-										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
-									</a>
-								</Link>
-							</div>
-						</div>
-					</div>
-
-					{/* Project 4 v.2 | Rayhansoe's Portfolio */}
-					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
-						{/* Image */}
-						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] lg:max-w-[50%]'>
-							<Link href='https://rayhansoe.github.io/'>
-								<a target='_blank'>
-									<Image
-										src={OldVersion}
-										alt="Rayhansoe's portofolio"
-										placeholder='blur'
-										width='1280'
-										height='894'
-										layout='responsive'
-										objectFit='cover'
-										quality={100}
-									/>
-								</a>
-							</Link>
-						</div>
-
-						{/* Text Section */}
-						<div className='flex flex-col items-baseline gap-2 sm:items-end lg:max-w-[50%]'>
-							<h4 className='font-averia'>Featured Project</h4>
-							<Link href='https://rayhansoe.github.io/'>
-								<a target='_blank'>
-									<h1 className='text-2xl font-semibold hover:underline'>
-										Rayhansoe&apos;s Portfolio (old version)
-									</h1>
-								</a>
-							</Link>
-							<div className='sm:text-right lg:p-8 lg:shadow-xl lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:outline lg:hover:outline-white lg:hover:dark:outline-slate-600'>
-								<p>
-									The First Web Portfolio that I Designed by myself. And this is the old version
-									using HTML, SCSS, and Javascript. And for the new version, you can check it{' '}
-									<Link href='https://rayhansoe.vercel.app/'>
-										<a className='text-primary-color hover:underline'>HERE</a>
-									</Link>
-									.
-								</p>
-							</div>
-							<ul className='flex gap-4 py-2 flex-wrap'>
-								<li>HTML</li>
-								<li>SCSS</li>
-								<li>Javascript</li>
-							</ul>
-							{/* Source */}
-							<div className='flex gap-4'>
-								<Link href='https://github.com/rayhansoe/rayhansoe.github.io/tree/master'>
-									<a target='_blank' className='hover:opacity-75'>
-										{renderGitHubIcons()}
-									</a>
-								</Link>
-								<Link href='https://rayhansoe.github.io/'>
-									<a target='_blank'>
-										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
-									</a>
-								</Link>
-							</div>
-						</div>
-					</div>
-
-					{/* Project 5 v.1 | Rafisoe's Portfolio */}
-					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
-						{/* Image */}
-						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] sm:order-1 lg:max-w-[50%]'>
-							<Link href='https://rafisoe.vercel.app/'>
-								<a target='_blank'>
-									<Image
-										src={RafiSoe}
-										alt="Rafisoe's Portfolio"
-										placeholder='blur'
-										width='1280'
-										height='894'
-										layout='responsive'
-										objectFit='cover'
-										quality={100}
-									/>
-								</a>
-							</Link>
-						</div>
-
-						{/* Text Section */}
-						<div className='flex flex-col items-baseline gap-2  lg:max-w-[50%]'>
-							<h4 className='font-averia'>Featured Project</h4>
-							<Link href='https://rafisoe.vercel.app/'>
-								<a target='_blank'>
-									<h1 className='text-2xl font-semibold hover:underline'>
-										Rafisoe&apos;s Portfolio
-									</h1>
-								</a>
-							</Link>
-							<div className='lg:p-8 lg:shadow-xl lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:outline lg:hover:outline-white lg:hover:dark:outline-slate-600'>
-								<p>
-									Web Portfolio that I built for My Brother. And this is the first time I&lsquo;m
-									using TailwindCSS with Nextjs and AOS. And for now, this is only a plain Home
-									Page. And I promise I&apos;ll complete all pages and sections.
-								</p>
-							</div>
-							<ul className='flex gap-4 py-2 flex-wrap'>
-								<li>Nextjs</li>
-								<li>React</li>
-								<li>TailwindCSS</li>
-								<li>AOS</li>
-							</ul>
-							{/* Source */}
-							<div className='flex gap-4'>
-								<Link href='https://github.com/rayhansoe/rafisoe'>
-									<a target='_blank' className='hover:opacity-75'>
-										{renderGitHubIcons()}
-									</a>
-								</Link>
-								<Link href='https://rafisoe.vercel.app/'>
-									<a target='_blank'>
-										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
-									</a>
-								</Link>
-							</div>
-						</div>
-					</div>
-
-					{/* Project 6 v.2 | Star Match Game */}
-					<div className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row sm:justify-between'>
-						{/* Image */}
-						<div className='relative rounded-lg overflow-hidden min-w-full hover:opacity-75 cursor-pointer shadow-xl dark:shadow-lg sm:min-w-[40%] lg:max-w-[50%]'>
-							<Link href='https://rayhansoe.github.io/Star-Match-Game/'>
-								<a target='_blank'>
-									<Image
-										src={StarMatchGame}
-										alt='Star Match Game'
-										placeholder='blur'
-										width='1280'
-										height='894'
-										layout='responsive'
-										objectFit='cover'
-										quality={100}
-									/>
-								</a>
-							</Link>
-						</div>
-
-						{/* Text Section */}
-						<div className='flex flex-col items-baseline gap-2 sm:items-end lg:max-w-[50%]'>
-							<h4 className='font-averia'>Featured Project</h4>
-							<Link href='https://rayhansoe.github.io/Star-Match-Game/'>
-								<a target='_blank'>
-									<h1 className='text-2xl font-semibold hover:underline'>Star Match Game</h1>
-								</a>
-							</Link>
-							<div className='sm:text-right lg:p-8 lg:shadow-xl lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:outline lg:hover:outline-white lg:hover:dark:outline-slate-600'>
-								<p>
-									A Simple Web App that I made when I first learned reactjs. And I learned from this{' '}
-									{''}
-									<Link href='https://www.pluralsight.com/courses/react-js-getting-started'>
-										<a className='text-primary-color hover:underline'>Pluralsight Course</a>
-									</Link>
-									.
-								</p>
-							</div>
-							<ul className='flex gap-4 py-2 flex-wrap'>
-								<li>React</li>
-							</ul>
-							{/* Source */}
-							<div className='flex gap-4'>
-								<Link href='https://github.com/rayhansoe/Star-Match-Game'>
-									<a target='_blank' className='hover:opacity-75'>
-										{renderGitHubIcons()}
-									</a>
-								</Link>
-								<Link href='https://rayhansoe.github.io/Star-Match-Game/'>
-									<a target='_blank'>
-										<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
-									</a>
-								</Link>
-							</div>
-						</div>
-					</div>
-				</div>
+				<div className='flex flex-col gap-14'>{renderProjects()}</div>
 			</Container>
 		</section>
 	)
