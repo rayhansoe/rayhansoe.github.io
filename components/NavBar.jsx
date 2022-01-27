@@ -87,14 +87,14 @@ const NavBar = () => {
 							onClick={stopBubbling}>
 							<li>
 								<Link href='/'>
-									<a>
+									<a className='hover:opacity-75'>
 										<span className='font-averia text-primary-color'>01.</span> About
 									</a>
 								</Link>
 							</li>
 							<li>
 								<Link href='/projects'>
-									<a>
+									<a className='hover:opacity-75'>
 										<span className='font-averia text-primary-color'>02.</span> Project
 									</a>
 								</Link>
