@@ -135,7 +135,7 @@ const Projects = () => {
 		},
 	]
 	const renderProjects = () => {
-		return data.map(p => <Project {...p} key={p.id} />)
+		return data?.map((p) => <Project {...p} key={p.id} />)
 	}
 
 	return (
@@ -154,7 +154,7 @@ const Projects = () => {
 					{/* <p className='py-1 '></p> */}
 				</figcaption>
 				<div className='flex flex-col gap-14'>
-					<>{renderProjects()}</>
+					<>{data?.length === 0 ? <div>Loading... </div> : renderProjects()}</>
 				</div>
 			</Container>
 		</section>
