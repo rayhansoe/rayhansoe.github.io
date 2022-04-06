@@ -13,7 +13,7 @@ const Container = dynamic(() => import('./Container'))
 const Hero = () => {
 	const router = useRouter()
 
-	const isHired = e => {
+	const isHired = (e) => {
 		e.preventDefault()
 		router.push('mailto:rayhan.rhssoe2@gmail.com')
 	}
@@ -33,10 +33,10 @@ const Hero = () => {
 							src={Cat}
 							alt='Cat Againts The World.'
 							placeholder='blur'
-							width='560'
-							height='535'
+							width={560}
+							height={535}
 							layout='responsive'
-							objectFit='contain'
+							objectFit='cover'
 							quality={100}
 						/>
 					</div>
