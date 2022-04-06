@@ -32,10 +32,10 @@ const Hero = () => {
 						<Image
 							src={Cat}
 							alt='Cat Againts The World.'
-							placeholder='blur'
 							width={560}
 							height={535}
 							layout='responsive'
+							priority
 							objectFit='cover'
 							quality={100}
 						/>
