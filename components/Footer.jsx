@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
-const Container = dynamic(() => import('./Container'))
-const LocalIcon = dynamic(() => import('./LocalIcon'))
+// const Container = dynamic(() => import('./Container'))
+// const LocalIcon = dynamic(() => import('./LocalIcon'))
+
+import Container from './Container'
+import LocalIcon from './LocalIcon'
 
 const Footer = () => {
 	return (

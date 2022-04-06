@@ -6,19 +6,20 @@ import { useCallback, useEffect, useState } from 'react'
 
 import { MoonIcon, SunIcon, MenuIcon } from '@heroicons/react/solid'
 
-const Container = dynamic(() => import('./Container'))
+// const Container = dynamic(() => import('./Container'))
+import Container from './Container'
 
 const NavBar = () => {
 	const [isMobileNavDisplayed, setIsMobileNavDisplayed] = useState(() => false)
 	const { systemTheme, theme, setTheme } = useTheme()
 	const [mounted, setMounted] = useState(false)
 
-	const mobileNavToggle = e => {
+	const mobileNavToggle = (e) => {
 		e.stopPropagation()
-		setIsMobileNavDisplayed(curr => !curr)
+		setIsMobileNavDisplayed((curr) => !curr)
 		document.body.classList.toggle('overflow-y-hidden')
 	}
-	const stopBubbling = e => {
+	const stopBubbling = (e) => {
 		e.stopPropagation()
 	}
 

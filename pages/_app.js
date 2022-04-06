@@ -4,7 +4,8 @@ import { ThemeProvider } from 'next-themes'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 
-const Layout = dynamic(() => import('../components/Layout'))
+// const Layout = dynamic(() => import('../components/Layout'))
+import Layout from '../components/Layout'
 
 function MyApp({ Component, pageProps }) {
 	return (

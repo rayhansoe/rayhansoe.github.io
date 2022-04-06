@@ -8,8 +8,10 @@ import OldVersion from '../public/Old version.webp'
 import JokesGenerator from '../public/Jokes Generator.webp'
 import StarMatchGame from '../public/star match game.webp'
 
-const Container = dynamic(() => import('./Container'))
-const Project = dynamic(() => import('./Project'))
+// const Container = dynamic(() => import('./Container'))
+// const Project = dynamic(() => import('./Project'))
+import Container from './Container'
+import Project from './Project'
 
 const Projects = () => {
 	const data = [

@@ -4,11 +4,12 @@ import dynamic from 'next/dynamic'
 
 import { ExternalLinkIcon } from '@heroicons/react/outline'
 
-const LocalIcon = dynamic(() => import('./LocalIcon'))
+// const LocalIcon = dynamic(() => import('./LocalIcon'))
+import LocalIcon from './LocalIcon'
 
 const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id }) => {
 	const renderTech = () => {
-		return techs.map(tech => <li key={tech}>{tech}</li>)
+		return techs.map((tech) => <li key={tech}>{tech}</li>)
 	}
 
 	return (
