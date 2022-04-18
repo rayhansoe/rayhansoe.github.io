@@ -1,15 +1,11 @@
 import Link from 'next/link'
-import dynamic from 'next/dynamic'
 
-import RafiSoe from '../public/rafisoe.webp'
 import StoreGG from '../public/StoreGG.webp'
 import MoviesDB from '../public/MoviesDB.webp'
-import OldVersion from '../public/Old version.webp'
-import JokesGenerator from '../public/Jokes Generator.webp'
+import GoalsApp from '../public/goals-app.webp'
 import StarMatchGame from '../public/star match game.webp'
+import JokesGenerator from '../public/Jokes Generator.webp'
 
-// const Container = dynamic(() => import('./Container'))
-// const Project = dynamic(() => import('./Project'))
 import Container from './Container'
 import Project from './Project'
 
@@ -18,6 +14,35 @@ const Projects = () => {
 		// Data 1
 		{
 			id: 0,
+			title: 'MERN Goals App',
+			desc: (
+				<p>
+					Goalsetter application from this{' '}
+					<Link href='https://youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm'>
+						<a className='text-primary-color hover:underline'>Youtube series.</a>
+					</Link>{' '}
+					The difference I did was to separate the Frontend and Backend to different servers.
+					Fronted ({' '}
+					<Link href='https://vercel.com/'>
+						<a className='text-primary-color hover:underline'>Vercel</a>
+					</Link>{' '}
+					) and Backend ({' '}
+					<Link href='https://www.heroku.com/'>
+						<a className='text-primary-color hover:underline'>Heroku</a>
+					</Link>{' '}
+					).
+				</p>
+			),
+			techs: ['MongodDB', 'Express', 'NodeJS', 'React', 'Redux', 'Axios', 'Heroku', 'Vercel'],
+			linkDemo: 'https://goalsapp-one.vercel.app/',
+			linkSource: 'https://github.com/rayhansoe?tab=repositories&q=goal&type=&language=&sort=',
+			srcImg: GoalsApp,
+			altImg: 'StoreGG Design by BWA',
+		},
+
+		// Data 2
+		{
+			id: 1,
 			title: 'StoreGG',
 			desc: (
 				<p>
@@ -36,9 +61,9 @@ const Projects = () => {
 			altImg: 'StoreGG Design by BWA',
 		},
 
-		// Data 2
+		// Data 3
 		{
-			id: 1,
+			id: 2,
 			title: 'Chuck Norris (Jokes Generator)',
 			desc: (
 				<p>
@@ -56,9 +81,9 @@ const Projects = () => {
 			altImg: 'Chuck Norris (Jokes Generator).',
 		},
 
-		// Data 3
+		// Data 4
 		{
-			id: 2,
+			id: 3,
 			title: 'MoviesDB',
 			desc: (
 				<p>
@@ -77,48 +102,9 @@ const Projects = () => {
 			altImg: 'Movies Database',
 		},
 
-		// Data 4
-		{
-			id: 3,
-			title: 'Rayhansoe&apos;s Portfolio (old version)',
-			desc: (
-				<p>
-					The First Web Portfolio that I Designed by myself. And this is the old version using HTML,
-					SCSS, and Javascript. And for the new version, you can check it{' '}
-					<Link href='https://rayhansoe.vercel.app/'>
-						<a className='text-primary-color hover:underline'>HERE</a>
-					</Link>
-					.
-				</p>
-			),
-			techs: ['HTML', 'CSS', 'Javascript'],
-			linkDemo: 'https://rayhansoe.github.io/',
-			linkSource: 'https://github.com/rayhansoe/rayhansoe.github.io/tree/master',
-			srcImg: OldVersion,
-			altImg: `Rayhansoe's Portfolio`,
-		},
-
 		// Data 5
 		{
 			id: 4,
-			title: 'Rafisoe&apos;s Portfolio',
-			desc: (
-				<p>
-					Web Portfolio that I built for My Brother. And this is the first time I&lsquo;m using
-					TailwindCSS with Nextjs and AOS. And for now, this is only a plain Home Page. And I
-					promise I&apos;ll complete all pages and sections.
-				</p>
-			),
-			techs: ['Nextjs', 'React', 'TailwindCSS', 'AOS'],
-			linkDemo: 'https://rafisoe.vercel.app/',
-			linkSource: 'https://github.com/rayhansoe/rafisoe',
-			srcImg: RafiSoe,
-			altImg: `Rafisoe's Portfolio`,
-		},
-
-		// Data 6
-		{
-			id: 5,
 			title: 'Star Match Game',
 			desc: (
 				<p>
