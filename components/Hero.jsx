@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -7,7 +6,6 @@ import Cat from '../public/Cat Full.webp'
 
 import styles from '../styles/Hero.module.scss'
 
-// const Container = dynamic(() => import('./Container'))
 import Container from './Container'
 
 // Hero Section / About Section

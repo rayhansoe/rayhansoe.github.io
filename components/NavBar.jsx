@@ -1,12 +1,10 @@
 import Link from 'next/link'
-import dynamic from 'next/dynamic'
 import { useTheme } from 'next-themes'
 
 import { useCallback, useEffect, useState } from 'react'
 
 import { MoonIcon, SunIcon, MenuIcon } from '@heroicons/react/solid'
 
-// const Container = dynamic(() => import('./Container'))
 import Container from './Container'
 
 const NavBar = () => {

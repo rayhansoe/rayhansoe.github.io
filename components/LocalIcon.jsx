@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
 const LocalIcon = ({ darkIcon, lightIcon }) => {
-	const { systemTheme, theme, setTheme } = useTheme()
+	const { systemTheme, theme } = useTheme()
 	const [mounted, setMounted] = useState(false)
 
 	useEffect(() => {

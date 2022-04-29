@@ -6,9 +6,10 @@ export default function Custom404() {
 			<Image
 				src={Error}
 				alt='Error'
-				placeholder='blur'
-				width='2000'
-				height='2000'
+				priority
+				objectFit='cover'
+				width={2000}
+				height={2000}
 				layout='responsive'
 				quality={100}
 			/>
