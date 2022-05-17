@@ -34,7 +34,7 @@ const Projects = () => {
 				</p>
 			),
 			techs: ['MongodDB', 'Express', 'NodeJS', 'React', 'Redux', 'Axios', 'Heroku', 'Vercel'],
-			linkDemo: 'https://goalsapp-one.vercel.app/',
+			linkDemo: 'https://backendgoalsapi.herokuapp.com/',
 			linkSource: 'https://github.com/rayhansoe?tab=repositories&q=goal&type=&language=&sort=',
 			srcImg: GoalsApp,
 			altImg: 'StoreGG Design by BWA',
