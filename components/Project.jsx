@@ -1,26 +1,28 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 
-import { ExternalLinkIcon } from '@heroicons/react/outline'
+import { ExternalLinkIcon } from "@heroicons/react/outline";
 
-import LocalIcon from './LocalIcon'
+import LocalIcon from "./LocalIcon";
 
 const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id }) => {
 	const renderTech = () => {
-		return techs.map((tech) => <li key={tech}>{tech}</li>)
-	}
+		return techs.map((tech) => <li key={tech}>{tech}</li>);
+	};
 
 	return (
 		<>
 			{/* Project 1 v.1 | StoreGG */}
 			<div
 				className='flex flex-col items-center py-14 gap-4 rounded-lg sm:flex-row
-																					sm:justify-between'>
+																					sm:justify-between'
+			>
 				{/* Image v1 / v2 without sm:order */}
 				<div
-					className={`relative rounded-lg overflow-hidden min-w-full hover:opacity-75
-																						cursor-pointer shadow-xl dark:shadow-lg ${(id + 1) % 2 === 0 ? '' : 'sm:order-1'}
-                      sm:min-w-[40%] lg:max-w-[50%]`}>
+					className={`relative rounded-lg overflow-hidden min-w-full hover:opacity-75 hover:scale-105 transition-all delay-75
+																						cursor-pointer shadow-xl dark:shadow-lg ${(id + 1) % 2 === 0 ? "" : "sm:order-1"}
+                      sm:min-w-[40%] lg:max-w-[50%]`}
+				>
 					<Link href={linkDemo}>
 						<a target='_blank'>
 							<Image
@@ -40,8 +42,9 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 				{/* Text Section v1 / v2 sm:items-end */}
 				<div
 					className={`flex flex-col items-baseline gap-2 ${
-						(id + 1) % 2 === 0 ? 'sm:items-end' : ''
-					} lg:max-w-[50%]`}>
+						(id + 1) % 2 === 0 ? "sm:items-end" : ""
+					} lg:max-w-[50%]`}
+				>
 					<h4 className='font-averia'>Featured Project</h4>
 					<Link href={linkDemo}>
 						<a target='_blank'>
@@ -51,8 +54,9 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 					{/* Desc v1 / v2 sm:text-right */}
 					<div
 						className={`${
-							(id + 1) % 2 === 0 ? 'sm:text-right' : ''
-						} lg:p-8 lg:shadow-xl lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:outline lg:hover:outline-white lg:hover:dark:outline-slate-600`}>
+							(id + 1) % 2 === 0 ? "sm:text-right" : ""
+						} lg:p-8 lg:shadow-md lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:shadow-xl lg:hover:scale-105 transition-all delay-75`}
+					>
 						{desc}
 					</div>
 					<ul className='flex gap-4 py-2 flex-wrap'>{renderTech()}</ul>
@@ -68,7 +72,8 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 											height='28'
 											viewBox='0 0 29 28'
 											fill='none'
-											xmlns='http://www.w3.org/2000/svg'>
+											xmlns='http://www.w3.org/2000/svg'
+										>
 											<path
 												fillRule='evenodd'
 												clipRule='evenodd'
@@ -83,7 +88,8 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 											height='28'
 											viewBox='0 0 29 28'
 											fill='none'
-											xmlns='http://www.w3.org/2000/svg'>
+											xmlns='http://www.w3.org/2000/svg'
+										>
 											<path
 												fillRule='evenodd'
 												clipRule='evenodd'
@@ -104,7 +110,7 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 				</div>
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default Project
+export default Project;
