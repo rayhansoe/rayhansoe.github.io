@@ -55,7 +55,7 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 					<div
 						className={`${
 							(id + 1) % 2 === 0 ? "sm:text-right" : ""
-						} lg:p-8 lg:shadow-md lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:shadow-xl lg:hover:scale-105 transition-all delay-75`}
+						} lg:p-8 lg:shadow-md lg:bg-text-light lg:dark:bg-dark-mode lg:my-4 lg:rounded-lg lg:bg-opacity-50 lg:hover:shadow-xl lg:hover:scale-105 transition-transform delay-75`}
 					>
 						{desc}
 					</div>
