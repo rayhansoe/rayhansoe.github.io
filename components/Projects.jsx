@@ -14,7 +14,7 @@ const Projects = () => {
 		// Data 1
 		{
 			id: 0,
-			title: "Solid Island Cart",
+			title: "Solid Cart App - Simple Cart App",
 			desc: (
 				<p>
 					The MVP Cart App uses{" "}
@@ -40,11 +40,11 @@ const Projects = () => {
 					.
 				</p>
 			),
-			techs: ["SolidJS", "SolidStart", "Island Architecture", "Prisma", "PlanetScale", "Vercel"],
-			linkDemo: "https://solid-island-cart.vercel.app/",
-			linkSource: "https://github.com/rayhansoe/solid-island-cart",
+			techs: ["SolidJS", "SolidStart", "Prisma", "PlanetScale", "Vercel"],
+			linkDemo: "https://solid-cart.vercel.app/",
+			linkSource: "https://github.com/rayhansoe/solid-cart",
 			srcImg: SolidIslandCart,
-			altImg: "Solid Island Cart",
+			altImg: "Solid Cart App",
 		},
 
 		// Data 2
