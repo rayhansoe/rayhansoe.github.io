@@ -10,8 +10,7 @@ const Footer = () => {
 				<footer className='flex flex-col items-center justify-center'>
 					<div className='flex gap-4'>
 						{/* Dribbble */}
-						<Link href='https://dribbble.com/rayhansoe'>
-							<a target='_blank'>
+						<Link href='https://dribbble.com/rayhansoe' target='_blank'>
 								<button className='py-[.30rem] px-2 mb-2 outline outline-1 rounded-md opacity-70 hover:opacity-100'>
 									<LocalIcon
 										darkIcon={
@@ -42,12 +41,10 @@ const Footer = () => {
 										}
 									/>
 								</button>
-							</a>
 						</Link>
 
 						{/* GitHub */}
-						<Link href='https://github.com/rayhansoe'>
-							<a target='_blank'>
+						<Link href='https://github.com/rayhansoe' target='_blank'>
 								<button className='py-[.30rem] px-2 mb-2 outline outline-1 rounded-md opacity-70 hover:opacity-100'>
 									<LocalIcon
 										darkIcon={
@@ -82,28 +79,27 @@ const Footer = () => {
 										}
 									/>
 								</button>
-							</a>
 						</Link>
 					</div>
 					<h4 className='font-averia text-center'>Made with ❤️ in Indonesia.</h4>
 					<h4 className='font-averia text-center'>
 						Develop use{' '}
-						<Link href='https://nextjs.org/'>
-							<a target='_blank' className='text-primary-color hover:underline'>
+						<Link href='https://nextjs.org/' target='_blank' className='text-primary-color hover:underline'>
+							
 								Next Js
-							</a>
+							
 						</Link>
 						,{' '}
-						<Link href='https://tailwindcss.com'>
-							<a target='_blank' className='text-primary-color hover:underline'>
+						<Link href='https://tailwindcss.com' target='_blank' className='text-primary-color hover:underline'>
+							
 								Tailwind CSS
-							</a>
+							
 						</Link>{' '}
 						and Hosted on{' '}
-						<Link href='https://vercel.com/'>
-							<a target='_blank' className='text-primary-color hover:underline'>
+						<Link href='https://vercel.com/' target='_blank' className='text-primary-color hover:underline'>
+							
 								Vercel
-							</a>
+							
 						</Link>
 					</h4>
 				</footer>

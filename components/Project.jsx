@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import { ExternalLinkIcon } from "@heroicons/react/outline";
 
@@ -23,8 +23,8 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 																						cursor-pointer shadow-xl dark:shadow-lg ${(id + 1) % 2 === 0 ? "" : "sm:order-1"}
                       sm:min-w-[40%] lg:max-w-[50%]`}
 				>
-					<Link href={linkDemo}>
-						<a target='_blank'>
+					<Link href={linkDemo} target='_blank'>
+						
 							<Image
 								src={srcImg}
 								alt={altImg}
@@ -35,7 +35,7 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 								objectFit='cover'
 								quality={100}
 							/>
-						</a>
+						
 					</Link>
 				</div>
 
@@ -46,10 +46,10 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 					} lg:max-w-[50%]`}
 				>
 					<h4 className='font-averia'>Featured Project</h4>
-					<Link href={linkDemo}>
-						<a target='_blank'>
+					<Link href={linkDemo} target='_blank'>
+						
 							<h1 className='text-2xl font-semibold hover:underline'>{title}</h1>
-						</a>
+						
 					</Link>
 					{/* Desc v1 / v2 sm:text-right */}
 					<div
@@ -62,8 +62,8 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 					<ul className='flex gap-4 py-2 flex-wrap'>{renderTech()}</ul>
 					{/* Source */}
 					<div className='flex gap-4'>
-						<Link href={linkSource}>
-							<a target='_blank' className='hover:opacity-75'>
+						<Link href={linkSource} target='_blank' className='hover:opacity-75'>
+							
 								{/* {renderGitHubIcons()} */}
 								<LocalIcon
 									darkIcon={
@@ -99,12 +99,12 @@ const Project = ({ linkDemo, srcImg, altImg, title, desc, techs, linkSource, id 
 										</svg>
 									}
 								/>
-							</a>
+							
 						</Link>
-						<Link href={linkDemo}>
-							<a target='_blank'>
+						<Link href={linkDemo} target='_blank'>
+							
 								<ExternalLinkIcon className='w-7 h-7 hover:opacity-75' role='link' />
-							</a>
+							
 						</Link>
 					</div>
 				</div>

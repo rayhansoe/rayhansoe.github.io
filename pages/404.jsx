@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Error from '../public/404 Error with a cute animal-bro.webp'
 export default function Custom404() {
 	return (

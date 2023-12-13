@@ -18,24 +18,24 @@ const Projects = () => {
 			desc: (
 				<p>
 					The MVP Cart App uses{" "}
-					<Link href='https://start.solidjs.com/'>
-						<a className='text-primary-color hover:underline'>SolidStart</a>
+					<Link href='https://start.solidjs.com/' className='text-primary-color hover:underline'>
+						SolidStart
 					</Link>{" "}
 					Experimental Feature{" "}
-					<Link href='https://www.patterns.dev/posts/islands-architecture/'>
-						<a className='text-primary-color hover:underline'>Island Architecture</a>
+					<Link href='https://www.patterns.dev/posts/islands-architecture/' className='text-primary-color hover:underline'>
+						Island Architecture
 					</Link>{" "}
 					which gives you 29kb of JS glory. Backend side using{" "}
-					<Link href='https://www.prisma.io/'>
-						<a className='text-primary-color hover:underline'>Prisma</a>
+					<Link href='https://www.prisma.io/' className='text-primary-color hover:underline'>
+						Prisma
 					</Link>{" "}
 					as ORM,{" "}
-					<Link href='https://planetscale.com/'>
-						<a className='text-primary-color hover:underline'>PlanetScale</a>
+					<Link href='https://planetscale.com/' className='text-primary-color hover:underline'>
+						PlanetScale
 					</Link>{" "}
 					as a Serverless MySQL Platform and Deployed to{" "}
-					<Link href='https://vercel.com/'>
-						<a className='text-primary-color hover:underline'>Vercel</a>
+					<Link href='https://vercel.com/' className='text-primary-color hover:underline'>
+						Vercel
 					</Link>
 					.
 				</p>
@@ -54,8 +54,8 @@ const Projects = () => {
 			desc: (
 				<p>
 					This landing page is from{" "}
-					<Link href='https://buildwithangga.com/kelas/full-stack-javascript-developer-2021-website-top-up-voucher-game?thumbnail=pvksVt2Vrr.211&main_leads=searchresult'>
-						<a className='text-primary-color hover:underline'>BWA Class</a>
+					<Link href='https://buildwithangga.com/kelas/full-stack-javascript-developer-2021-website-top-up-voucher-game?thumbnail=pvksVt2Vrr.211&main_leads=searchresult' className='text-primary-color hover:underline'>
+						BWA Class
 					</Link>{" "}
 					that I rebuilt for learning Responsive Layout without any frameworks.
 				</p>
@@ -74,8 +74,8 @@ const Projects = () => {
 			desc: (
 				<p>
 					Chuck Norris Jokes Generator that I built using public API (
-					<Link href='https://api.chucknorris.io/'>
-						<a className='text-primary-color hover:underline'>Chuck Norris API</a>
+					<Link href='https://api.chucknorris.io/' className='text-primary-color hover:underline'>
+						Chuck Norris API
 					</Link>
 					). And for tech, I&apos;m using React, Material UI, Styled Component, and React Router.
 				</p>
@@ -95,8 +95,8 @@ const Projects = () => {
 				<p>
 					This Movies Database is the first web app that I designed & built using React. I&apos;m
 					using this public API (
-					<Link href='https://www.themoviedb.org/'>
-						<a className='text-primary-color hover:underline'>TMDB</a>
+					<Link href='https://www.themoviedb.org/' className='text-primary-color hover:underline'>
+						TMDB
 					</Link>
 					). And for tech, I&apos;m using only React.
 				</p>
@@ -115,8 +115,8 @@ const Projects = () => {
 			desc: (
 				<p>
 					A Simple Web App that I made when I first learned reactjs. And I learned from this {""}
-					<Link href='https://www.pluralsight.com/courses/react-js-getting-started'>
-						<a className='text-primary-color hover:underline'>Pluralsight Course</a>
+					<Link href='https://www.pluralsight.com/courses/react-js-getting-started' className='text-primary-color hover:underline'>
+						Pluralsight Course
 					</Link>
 					.
 				</p>
@@ -138,10 +138,9 @@ const Projects = () => {
 				<figcaption className='py-6 font-medium italic text-center text-xl opacity-80'>
 					<p>
 						&quot; I have a design portfolio too, you can{" "}
-						<Link href='https://dribbble.com/rayhansoe'>
-							<a target='_blank' className='text-primary-color hover:underline'>
+						<Link href='https://dribbble.com/rayhansoe' target='_blank' className='text-primary-color hover:underline'>
 								check here
-							</a>
+							
 						</Link>
 						. &quot;
 					</p>

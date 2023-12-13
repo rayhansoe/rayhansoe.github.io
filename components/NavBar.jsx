@@ -58,11 +58,9 @@ const NavBar = () => {
 				<div className='nav flex justify-between items-center'>
 					{/* LOGO */}
 					<Link href='/'>
-						<a>
 							<h2 className='font-averia font-bold text-3xl'>
 								<span className='text-primary-color'>DEV</span>HOAM
 							</h2>
-						</a>
 					</Link>
 
 					{/* Nav Wrapper */}
@@ -87,17 +85,17 @@ const NavBar = () => {
 							onClick={stopBubbling}
 						>
 							<li>
-								<Link href='/'>
-									<a className='hover:opacity-75'>
+								<Link href='/' className='hover:opacity-75'>
+									
 										<span className='font-averia text-primary-color'>01.</span> About
-									</a>
+									
 								</Link>
 							</li>
 							<li>
-								<Link href='/projects'>
-									<a className='hover:opacity-75'>
+								<Link href='/projects' className='hover:opacity-75'>
+									
 										<span className='font-averia text-primary-color'>02.</span> Project
-									</a>
+									
 								</Link>
 							</li>
 						</ul>

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -91,12 +91,10 @@ const Hero = () => {
 								Hire Me!
 							</button>
 							<button className={styles.secButton}>
-								<Link href='/Resume.pdf'>
-									<a download target='_blank'>
+								<Link href='/Resume.pdf' download target='_blank'>
 										<span className={styles.text}>Resume</span>{' '}
 										<span className={styles.icon}>📁</span>
 										<span className={styles.icon2}>📂</span>
-									</a>
 								</Link>
 							</button>
 						</div>
