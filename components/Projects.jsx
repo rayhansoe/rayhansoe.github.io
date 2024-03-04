@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import StoreGG from "../public/StoreGG.webp";
 import MoviesDB from "../public/MoviesDB.webp";
-import SolidIslandCart from "../public/solid-island-cart.webp";
+import SolidIslandCart from "../public/vercel-store.avif";
 import StarMatchGame from "../public/star match game.webp";
 import JokesGenerator from "../public/Jokes Generator.webp";
 
@@ -14,37 +14,23 @@ const Projects = () => {
 		// Data 1
 		{
 			id: 0,
-			title: "Solid Cart App - Simple Cart App",
+			title: "Vercel Store - Solid Start Version",
 			desc: (
 				<p>
-					The MVP Cart App uses{" "}
-					<Link href='https://start.solidjs.com/' className='text-primary-color hover:underline'>
-						SolidStart
-					</Link>{" "}
-					Experimental Feature{" "}
-					<Link href='https://www.patterns.dev/posts/islands-architecture/' className='text-primary-color hover:underline'>
-						Island Architecture
-					</Link>{" "}
-					which gives you 29kb of JS glory. Backend side using{" "}
-					<Link href='https://www.prisma.io/' className='text-primary-color hover:underline'>
-						Prisma
-					</Link>{" "}
-					as ORM,{" "}
-					<Link href='https://planetscale.com/' className='text-primary-color hover:underline'>
-						PlanetScale
-					</Link>{" "}
-					as a Serverless MySQL Platform and Deployed to{" "}
+					<Link className='text-primary-color hover:underline' href='https://vercel.com/templates/next.js/nextjs-commerce'>Vercel Store</Link> that rewrite using {""}
+					<Link className='text-primary-color hover:underline' href={'https://start.solidjs.com/getting-started/what-is-solidstart'}>SolidStart</Link> {" "}
+					and Deployed to{" "}
 					<Link href='https://vercel.com/' className='text-primary-color hover:underline'>
 						Vercel
 					</Link>
 					.
 				</p>
 			),
-			techs: ["SolidJS", "SolidStart", "Prisma", "PlanetScale", "Vercel"],
-			linkDemo: "https://solid-cart.vercel.app/",
-			linkSource: "https://github.com/rayhansoe/solid-cart",
+			techs: ["SolidJS", "SolidStart", "Shopify", "Tailwind", "Vercel"],
+			linkDemo: "https://start-store.vercel.app/",
+			linkSource: "https://github.com/rayhansoe/start-store",
 			srcImg: SolidIslandCart,
-			altImg: "Solid Cart App",
+			altImg: "Vercel Store SolidStart Version",
 		},
 
 		// Data 2
